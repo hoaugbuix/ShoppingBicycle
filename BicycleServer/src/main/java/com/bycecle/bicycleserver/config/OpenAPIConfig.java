@@ -1,4 +1,4 @@
-package com.bycecle.bicycleserver.config;//package com.hoangbuix.management_work.config;
+package com.bycecle.bicycleserver.config;
 //
 //import com.google.common.collect.Lists;
 //import io.swagger.v3.oas.models.OpenAPI;

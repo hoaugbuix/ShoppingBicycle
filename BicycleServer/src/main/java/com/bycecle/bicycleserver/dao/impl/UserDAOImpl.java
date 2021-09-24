@@ -50,4 +50,9 @@ public class UserDAOImpl extends BaseDAOImpl<UserEntity> implements UserDAO<User
                 new UserMapper(), username, email);
         return users.isEmpty() ? null : users.get(0);
     }
+
+    @Override
+    public UserEntity findByEmail(String email) {
+        return null;
+    }
 }
