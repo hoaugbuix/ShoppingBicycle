@@ -1,12 +1,13 @@
 -- Structure
 -- # CREATE DATABASE shopping_bicycle CHARACTER SET utf8 COLLATE utf8_general_ci;
+use shopping_bicycle;
 SET NAMES utf8mb4;
 SET
 FOREIGN_KEY_CHECKS = 0;
 
--- drop database shopping_bicycle;
+-- -- DROP database shopping_bicycle;
 
-DROP TABLE user;
+-- -- DROP TABLE user;
 CREATE TABLE user
 (
     id           INTEGER      NOT NULL AUTO_INCREMENT,
@@ -21,7 +22,7 @@ CREATE TABLE user
     updated_date TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
-DROP TABLE user_role;
+-- DROP TABLE user_role;
 CREATE TABLE user_role
 (
     id           INTEGER   NOT NULL AUTO_INCREMENT,
@@ -33,7 +34,7 @@ CREATE TABLE user_role
     PRIMARY KEY (id)
 );
 
-DROP TABLE role;
+-- DROP TABLE role;
 CREATE TABLE role
 (
     id           INTEGER     NOT NULL AUTO_INCREMENT,
@@ -46,7 +47,7 @@ CREATE TABLE role
 );
 
 
-DROP TABLE notification;
+-- DROP TABLE notification;
 CREATE TABLE notification
 (
     id           INTEGER   NOT NULL AUTO_INCREMENT,
@@ -61,7 +62,7 @@ CREATE TABLE notification
 );
 
 
-DROP TABLE image;
+-- DROP TABLE image;
 CREATE TABLE image
 (
     id           INTEGER      NOT NULL AUTO_INCREMENT,
@@ -70,13 +71,13 @@ CREATE TABLE image
     size         VARCHAR(255) NOT NULL,
     file_type    VARCHAR(255) NOT NULL,
     post_id      INTEGER      NOT NULL,
-    upload_by    NVARCHR(255) NOT NULL,
+    upload_by    NVARCHAR(255) NOT NULL,
     active_flag  INTEGER      NOT NULL DEFAULT 1,
     created_date TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_date TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
-DROP TABLE email;
+-- DROP TABLE email;
 CREATE TABLE email
 (
     id            INTEGER   NOT NULL AUTO_INCREMENT,
@@ -88,7 +89,7 @@ CREATE TABLE email
     PRIMARY KEY (id)
 );
 
-DROP TABLE brand;
+-- DROP TABLE brand;
 CREATE TABLE brand
 (
     id           INTEGER      NOT NULL AUTO_INCREMENT,
@@ -100,7 +101,7 @@ CREATE TABLE brand
     PRIMARY KEY (id)
 );
 
-DROP TABLE post;
+-- DROP TABLE post;
 CREATE TABLE post
 (
     id            INTEGER        NOT NULL AUTO_INCREMENT,
@@ -120,7 +121,7 @@ CREATE TABLE post
     PRIMARY KEY (id)
 );
 
-DROP TABLE category;
+-- DROP TABLE category;
 CREATE TABLE category
 (
     id            INTEGER      NOT NULL AUTO_INCREMENT,
@@ -131,7 +132,7 @@ CREATE TABLE category
     updated_date  TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
-DROP TABLE product;
+-- DROP TABLE product;
 CREATE TABLE product
 (
     id            INTEGER        NOT NULL AUTO_INCREMENT,
@@ -148,7 +149,7 @@ CREATE TABLE product
     PRIMARY KEY (id)
 );
 
-DROP TABLE product_category;
+-- DROP TABLE product_category;
 CREATE TABLE product_category
 (
     id           INTEGER   NOT NULL AUTO_INCREMENT,
@@ -162,7 +163,7 @@ CREATE TABLE product_category
     PRIMARY KEY (id)
 );
 
-DROP TABLE product_size;
+-- DROP TABLE product_size;
 CREATE TABLE product_size
 (
     id           INTEGER   NOT NULL AUTO_INCREMENT,
@@ -174,7 +175,7 @@ CREATE TABLE product_size
     PRIMARY KEY (id)
 );
 
-DROP TABLE promotio;
+-- DROP TABLE promotio;
 CREATE TABLE promotion
 (
     id                     INTEGER      NOT NULL AUTO_INCREMENT,
@@ -182,8 +183,8 @@ CREATE TABLE promotion
     discount_type          INTEGER      NOT NULL,
     discount_value         INTEGER      NOT NULL,
     maximum_discount_value INTEGER      NOT NULL,
-    is_active              BOOLAND      NOT NULL,
-    is_public              BOOLAND      NOT NULL,
+    is_active              BOOLEAN      NOT NULL,
+    is_public              BOOLEAN     NOT NULL,
     name                   VARCHAR (255) NOT NULL,
     active_flag            INTEGER      NOT NULL DEFAULT 1,
     created_date           TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -191,13 +192,12 @@ CREATE TABLE promotion
     PRIMARY KEY (id)
 );
 
-DROP TABLE order;
-CREATE TABLE order(
+-- DROP TABLE order;
+CREATE TABLE orders(
                       id                     INTEGER      NOT NULL AUTO_INCREMENT,
                       note            VARCHAR (255) NOT NULL,
                       product_price          DECIMAL(10,2)     NOT NULL,
                       promotion_id         INTEGER      NOT NULL,
-                      product_price bigint DEFAULT NULL,
                       promotion json DEFAULT NULL,
                       receiver_address varchar(255) DEFAULT NULL,
                       receiver_name varchar(255) DEFAULT NULL,
@@ -216,7 +216,7 @@ CREATE TABLE order(
 
 );
 
-DROP TABLE finance;
+-- DROP TABLE finance;
 CREATE TABLE finance (
                          id                     INTEGER      NOT NULL AUTO_INCREMENT,
                          amount            BIGINT NOT NULL,
@@ -227,7 +227,7 @@ CREATE TABLE finance (
                          PRIMARY KEY (id)
 );
 
-DROP TABLE configuration;
+-- DROP TABLE configuration;
 CREATE TABLE configuration(
                               id                     INTEGER      NOT NULL AUTO_INCREMENT,
                               bicycle_choice           JSON NOT NULL,
@@ -235,11 +235,11 @@ CREATE TABLE configuration(
                               created_date           TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
                               updated_date           TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
                               PRIMARY KEY (id)
-)
+);
 
 ALTER TABLE user_role
     ADD CONSTRAINT fk_userRole_user FOREIGN KEY (user_id) REFERENCES user (id);
 ALTER TABLE user_role
     ADD CONSTRAINT fk_userRole_role FOREIGN KEY (role_id) REFERENCES role (id);
-ADD CONSTRAINT fk_notification_user FOREIGN KEY (user_id) REFERENCES user (id);
+
 
