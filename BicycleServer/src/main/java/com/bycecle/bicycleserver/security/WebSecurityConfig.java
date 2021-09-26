@@ -80,5 +80,6 @@ public class WebSecurityConfig<CustomerUserDetailService> extends WebSecurityCon
     public void configure(WebSecurity web) throws Exception {
         web
                 .ignoring()
-                .antMatchers(STATIC_RESOURCES)  ;  }
+                .antMatchers(STATIC_RESOURCES);
+    }
 }

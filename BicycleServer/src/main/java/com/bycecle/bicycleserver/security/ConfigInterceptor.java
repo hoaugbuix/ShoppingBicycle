@@ -9,13 +9,13 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class ConfigInterceptor extends HandlerInterceptorAdapter{
+public class ConfigInterceptor extends HandlerInterceptorAdapter {
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (!authentication.getAuthorities().contains(new SimpleGrantedAuthority("ROLE_ANONYMOUS"))) {
             CustomUserDetails principal = (CustomUserDetails) authentication.getPrincipal();
-            modelAndView.addObject("user_fullname", principal.getUser().getFirstName() +" "+ principal.getUser().getLastName());
+            modelAndView.addObject("user_fullname", principal.getUser().getFirstName() + " " + principal.getUser().getLastName());
 //            modelAndView.addObject("user_phone", principal.getUser().getPhone());
             modelAndView.addObject("user_email", principal.getUser().getEmail());
 //            modelAndView.addObject("user_address", principal.getUser().getAddress());

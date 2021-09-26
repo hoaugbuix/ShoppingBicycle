@@ -1,6 +1,7 @@
 -- Structure
 -- # CREATE DATABASE shopping_bicycle CHARACTER SET utf8 COLLATE utf8_general_ci;
-use shopping_bicycle;
+use
+shopping_bicycle;
 SET NAMES utf8mb4;
 SET
 FOREIGN_KEY_CHECKS = 0;
@@ -53,7 +54,6 @@ CREATE TABLE notification
     id           INTEGER   NOT NULL AUTO_INCREMENT,
     user_id      INTEGER   NOT NULL,
     post_id      INTEGER   NOT NULL,
-    task_id      INTEGER   NOT NULL,
     seen         bit(1)    NOT NULL,
     active_flag  INTEGER   NOT NULL DEFAULT 1,
     created_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -71,7 +71,7 @@ CREATE TABLE image
     size         VARCHAR(255) NOT NULL,
     file_type    VARCHAR(255) NOT NULL,
     post_id      INTEGER      NOT NULL,
-    upload_by    NVARCHAR(255) NOT NULL,
+    upload_by    INTEGER      NOT NULL,
     active_flag  INTEGER      NOT NULL DEFAULT 1,
     created_date TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_date TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -80,12 +80,12 @@ CREATE TABLE image
 -- DROP TABLE email;
 CREATE TABLE email
 (
-    id            INTEGER   NOT NULL AUTO_INCREMENT,
-    content_email LONGTEXT  NOT NULL,
-    seen          bit(1)    NOT NULL,
-    active_flag   INTEGER   NOT NULL DEFAULT 1,
-    created_date  TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_date  TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    id            INTEGER      NOT NULL AUTO_INCREMENT,
+    content_email MESSAGE_TEXT NOT NULL,
+    seen          bit(1)       NOT NULL,
+    active_flag   INTEGER      NOT NULL DEFAULT 1,
+    created_date  TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_date  TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
 
@@ -105,19 +105,16 @@ CREATE TABLE brand
 CREATE TABLE post
 (
     id            INTEGER        NOT NULL AUTO_INCREMENT,
-    name          VARCHAR(255)   NOT NULL,
+    content TEXT NOT NULL,
     slug          VARCHAR(255)   NOT NULL,
-    brand_id      INTEGER        NOT NULL,
-    description   NVARCHAR(255) NOT NULL,
-    price         DECIMAL(50, 2) NOT NULL,
-    product_image VARCHAR(255)   NOT NULL,
-    total_sold    INT            NOT NULL,
-    public_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    title      VARCHAR(255)       NOT NULL,
+    thumbnail varchar(255) DEFAULT NULL,
+    description   VARCHAR(255)   NOT NULL,
     active_flag   INTEGER        NOT NULL DEFAULT 1,
     created_date  TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    created_by INTEGER NOT NULL ,
+    created_by    INTEGER        NOT NULL,
     updated_date  TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_by INTEGER NOT NULL ,
+    updated_by    INTEGER        NOT NULL,
     PRIMARY KEY (id)
 );
 
@@ -137,7 +134,7 @@ CREATE TABLE product
 (
     id            INTEGER        NOT NULL AUTO_INCREMENT,
     product_name  VARCHAR(100)   NOT NULL,
-    description   NVARCHAR(255) NOT NULL,
+    description   VARCHAR(255)   NOT NULL,
     slug          VARCHAR(255)   NOT NULL,
     brand_id      INTEGER        NOT NULL,
     price         DECIMAL(50, 2) NOT NULL,
@@ -156,9 +153,7 @@ CREATE TABLE product_category
     product_id   INTEGER   NOT NULL,
     category_id  INTEGER   NOT NULL,
     active_flag  INTEGER   NOT NULL DEFAULT 1,
-    created_by INTEGER NOT NULL ,
     created_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_by INTEGER NOT NULL ,
     updated_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
@@ -179,13 +174,13 @@ CREATE TABLE product_size
 CREATE TABLE promotion
 (
     id                     INTEGER      NOT NULL AUTO_INCREMENT,
+    name                   VARCHAR(255) NOT NULL,
     coupon_code            varchar(255) NOT NULL,
     discount_type          INTEGER      NOT NULL,
     discount_value         INTEGER      NOT NULL,
     maximum_discount_value INTEGER      NOT NULL,
     is_active              BOOLEAN      NOT NULL,
-    is_public              BOOLEAN     NOT NULL,
-    name                   VARCHAR (255) NOT NULL,
+    is_public              BOOLEAN      NOT NULL,
     active_flag            INTEGER      NOT NULL DEFAULT 1,
     created_date           TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_date           TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -193,52 +188,55 @@ CREATE TABLE promotion
 );
 
 -- DROP TABLE order;
-CREATE TABLE orders(
-                      id                     INTEGER      NOT NULL AUTO_INCREMENT,
-                      note            VARCHAR (255) NOT NULL,
-                      product_price          DECIMAL(10,2)     NOT NULL,
-                      promotion_id         INTEGER      NOT NULL,
-                      promotion json DEFAULT NULL,
-                      receiver_address varchar(255) DEFAULT NULL,
-                      receiver_name varchar(255) DEFAULT NULL,
-                      receiver_phone varchar(255) DEFAULT NULL,
-                      size int DEFAULT NULL,
-                      status int DEFAULT NULL,
-                      total_price    bigint DEFAULT NULL,
-                      buyer bigint DEFAULT NULL,
-                      created_by bigint DEFAULT NULL,
-                      modified_by bigint DEFAULT NULL,
-                      product_id varchar(255) DEFAULT NULL,
-                      active_flag            INTEGER      NOT NULL DEFAULT 1,
-                      created_date           TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                      updated_date           TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                      PRIMARY KEY (id)
+CREATE TABLE orders
+(
+    id               INTEGER        NOT NULL AUTO_INCREMENT,
+    note             VARCHAR(255)   NOT NULL,
+    product_price    DECIMAL(10, 2) NOT NULL,
+    promotion_id     INTEGER        NOT NULL,
+    promotion        json                    DEFAULT NULL,
+    receiver_address varchar(255)            DEFAULT NULL,
+    receiver_name    varchar(255)            DEFAULT NULL,
+    receiver_phone   varchar(255)            DEFAULT NULL,
+    size             int                     DEFAULT NULL,
+    status           int                     DEFAULT NULL,
+    total_price      bigint                  DEFAULT NULL,
+    buyer            bigint         DEFAULT NULL,
+    created_by       bigint         DEFAULT NULL,
+    modified_by      bigint         DEFAULT NULL,
+    product_id       INTEGER        DEFAULT NULL,
+    active_flag      INTEGER        NOT NULL DEFAULT 1,
+    created_date     TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_date     TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
 
 );
 
 -- DROP TABLE finance;
-CREATE TABLE finance (
-                         id                     INTEGER      NOT NULL AUTO_INCREMENT,
-                         amount            BIGINT NOT NULL,
-                         order_id          INTEGER      NOT NULL,
-                         active_flag            INTEGER      NOT NULL DEFAULT 1,
-                         created_date           TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                         updated_date           TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                         PRIMARY KEY (id)
+CREATE TABLE finance
+(
+    id           INTEGER   NOT NULL AUTO_INCREMENT,
+    amount       BIGINT    NOT NULL,
+    order_id     INTEGER   NOT NULL,
+    active_flag  INTEGER   NOT NULL DEFAULT 1,
+    created_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
 );
 
 -- DROP TABLE configuration;
-CREATE TABLE configuration(
-                              id                     INTEGER      NOT NULL AUTO_INCREMENT,
-                              bicycle_choice           JSON NOT NULL,
-                              active_flag            INTEGER      NOT NULL DEFAULT 1,
-                              created_date           TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                              updated_date           TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                              PRIMARY KEY (id)
+CREATE TABLE configuration
+(
+    id             INTEGER   NOT NULL AUTO_INCREMENT,
+    bicycle_choice JSON      NOT NULL,
+    active_flag    INTEGER   NOT NULL DEFAULT 1,
+    created_date   TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_date   TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
 );
 
 ALTER TABLE user_role
-    ADD CONSTRAINT fk_userRole_user FOREIGN KEY (user_id) REFERENCES user (id);
+    ADD CONSTRAINT fk_userRole_user FOREIGN KEY (user_id) REFERENCES user (id),
 ALTER TABLE user_role
     ADD CONSTRAINT fk_userRole_role FOREIGN KEY (role_id) REFERENCES role (id);
 
