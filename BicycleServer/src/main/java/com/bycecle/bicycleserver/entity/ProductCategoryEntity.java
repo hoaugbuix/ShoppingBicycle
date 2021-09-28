@@ -11,13 +11,13 @@ import java.util.List;
 @Table(name = "product_category")
 public class ProductCategoryEntity extends BaseEntity {
 
-    @ManyToMany(cascade = {
-            CascadeType.PERSIST,
-            CascadeType.MERGE
-    })
-    @JoinTable(name = "post_tag",
-            joinColumns = @JoinColumn(name = "product_id"),
-            inverseJoinColumns = @JoinColumn(name = "category_id")
-    )
-    private List<CategoryEntity> tags = new ArrayList<>();
+//    @ManyToMany(cascade = {
+//            CascadeType.PERSIST,
+//            CascadeType.MERGE
+//    })
+//    @JoinTable(name = "post_tag",
+//            joinColumns = @JoinColumn(name = "product_id"),
+//            inverseJoinColumns = @JoinColumn(name = "category_id")
+//    )
+//    private List<CategoryEntity> tags = new ArrayList<>();
 }

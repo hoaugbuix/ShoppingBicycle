@@ -25,11 +25,11 @@ public class ImageEntity extends BaseEntity {
     @Column(name = "type")
     private String type;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "post_id")
-    private PostEntity post;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "upload_by")
-    private int uploadBy;
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "post_id")
+//    private PostEntity post;
+//
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "upload_by")
+//    private int uploadBy;
 }
