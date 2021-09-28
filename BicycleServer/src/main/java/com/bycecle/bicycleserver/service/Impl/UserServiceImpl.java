@@ -2,13 +2,19 @@ package com.bycecle.bicycleserver.service.Impl;
 
 import com.bycecle.bicycleserver.dao.RoleDAO;
 import com.bycecle.bicycleserver.dao.UserDAO;
+import com.bycecle.bicycleserver.dao.UserRoleDAO;
 import com.bycecle.bicycleserver.entity.RoleEntity;
 import com.bycecle.bicycleserver.entity.UserEntity;
+import com.bycecle.bicycleserver.entity.UserRoleEntity;
+import com.bycecle.bicycleserver.exception.BadRequestException;
 import com.bycecle.bicycleserver.exception.DuplicateRecordException;
 import com.bycecle.bicycleserver.model.converter.UserConvert;
 import com.bycecle.bicycleserver.model.request.create.CreateUserReq;
+import com.bycecle.bicycleserver.model.request.update.ChangePasswordReq;
+import com.bycecle.bicycleserver.model.request.update.UpdateUserReq;
 import com.bycecle.bicycleserver.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Component;
 
 import java.util.Collections;
@@ -21,6 +27,8 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private RoleDAO<RoleEntity> roleDAO;
+    @Autowired
+    private UserRoleDAO<UserRoleEntity >userRoleDAO;
 
     @Override
     public UserEntity save(CreateUserReq req) {
@@ -34,7 +42,40 @@ public class UserServiceImpl implements UserService {
             user.setRoles(Collections.singleton(role));
         }
         user = UserConvert.toEntity(req);
-        return user;
+        int id = userDAO.save(user);
+        UserEntity newUser = userDAO.findById(id);
+        if (newUser != null){
+            UserRoleEntity userRole = new UserRoleEntity();
+            userRole.setUsers(newUser);
+            userRole.setRoles(role);
+            userRoleDAO.save(userRole);
+        }
+        return newUser;
+    }
+
+    @Override
+    public UserEntity update(UserEntity user, UpdateUserReq req) {
+        int id = 0;
+        if (user != null){
+            user.setFirstName(req.getFirstName());
+            user.setLastName(req.getLastName());
+            user.setAvatar(req.getAvatar());
+            user.setEmail(req.getEmail());
+            id = userDAO.save(user);
+        }
+        return userDAO.findById(id);
+    }
+
+    @Override
+    public void changePassword(UserEntity user, ChangePasswordReq req) {
+        // Validate password
+        if (!BCrypt.checkpw(req.getOldPassword(), user.getPassword())) {
+            throw new BadRequestException("Mật khẩu cũ không chính xác");
+        }
+
+        String hash = BCrypt.hashpw(req.getNewPassword(), BCrypt.gensalt(12));
+        user.setPassword(hash);
+        userDAO.update(user);
     }
 
     @Override
