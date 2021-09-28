@@ -1,26 +1,26 @@
 -- Structure
--- # CREATE DATABASE shopping_bicycle CHARACTER SET utf8 COLLATE utf8_general_ci;
-use
-shopping_bicycle;
+-- CREATE DATABASE shopping_bicycle CHARACTER SET utf8 COLLATE utf8_general_ci;
+-- use
+-- shopping_bicycle;
 SET NAMES utf8mb4;
 SET
-FOREIGN_KEY_CHECKS = 0;
+    FOREIGN_KEY_CHECKS = 0;
 
 -- -- DROP database shopping_bicycle;
 
 -- -- DROP TABLE user;
 CREATE TABLE user
 (
-    id           INTEGER      NOT NULL AUTO_INCREMENT,
+    id           INTEGER       NOT NULL AUTO_INCREMENT,
     first_name   NVARCHAR(100) NOT NULL,
     last_name    NVARCHAR(100) NOT NULL,
-    avatar       VARCHAR(255) NOT NULL,
-    user_name    VARCHAR(50)  NOT NULL,
-    password     VARCHAR(100) NOT NULL,
-    email        VARCHAR(100) NOT NULL,
-    active_flag  INTEGER      NOT NULL DEFAULT 1,
-    created_date TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_date TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    avatar       VARCHAR(255)  NOT NULL,
+    user_name    VARCHAR(50)   NOT NULL,
+    password     VARCHAR(100)  NOT NULL,
+    email        VARCHAR(100)  NOT NULL,
+    active_flag  INTEGER       NOT NULL DEFAULT 1,
+    created_date TIMESTAMP     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_date TIMESTAMP     NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
 -- DROP TABLE user_role;
@@ -38,12 +38,12 @@ CREATE TABLE user_role
 -- DROP TABLE role;
 CREATE TABLE role
 (
-    id           INTEGER     NOT NULL AUTO_INCREMENT,
-    role_name    VARCHAR(50) NOT NULL,
+    id           INTEGER       NOT NULL AUTO_INCREMENT,
+    role_name    VARCHAR(50)   NOT NULL,
     description  NVARCHAR(255) NULL,
-    active_flag  INTEGER     NOT NULL DEFAULT 1,
-    created_date TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_date TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    active_flag  INTEGER       NOT NULL DEFAULT 1,
+    created_date TIMESTAMP     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_date TIMESTAMP     NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
 
@@ -80,12 +80,12 @@ CREATE TABLE image
 -- DROP TABLE email;
 CREATE TABLE email
 (
-    id            INTEGER      NOT NULL AUTO_INCREMENT,
-    content_email MESSAGE_TEXT NOT NULL,
-    seen          bit(1)       NOT NULL,
-    active_flag   INTEGER      NOT NULL DEFAULT 1,
-    created_date  TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_date  TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    id           INTEGER   NOT NULL AUTO_INCREMENT,
+    content_email TEXT NOT NULL,
+    seen         bit(1)    NOT NULL,
+    active_flag  INTEGER   NOT NULL DEFAULT 1,
+    created_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
 
@@ -104,29 +104,30 @@ CREATE TABLE brand
 -- DROP TABLE post;
 CREATE TABLE post
 (
-    id            INTEGER        NOT NULL AUTO_INCREMENT,
-    content TEXT NOT NULL,
-    slug          VARCHAR(255)   NOT NULL,
-    title      VARCHAR(255)       NOT NULL,
-    thumbnail varchar(255) DEFAULT NULL,
-    description   VARCHAR(255)   NOT NULL,
-    active_flag   INTEGER        NOT NULL DEFAULT 1,
-    created_date  TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    created_by    INTEGER        NOT NULL,
-    updated_date  TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_by    INTEGER        NOT NULL,
+    id           INTEGER      NOT NULL AUTO_INCREMENT,
+    content      TEXT         NOT NULL,
+    slug         VARCHAR(255) NOT NULL,
+    title        VARCHAR(255) NOT NULL,
+    thumbnail    varchar(255)          DEFAULT NULL,
+    description  VARCHAR(255) NOT NULL,
+    active_flag  INTEGER      NOT NULL DEFAULT 1,
+    created_date TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    created_by   INTEGER      NOT NULL,
+    updated_date TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_by   INTEGER      NOT NULL,
     PRIMARY KEY (id)
 );
 
 -- DROP TABLE category;
 CREATE TABLE category
 (
-    id            INTEGER      NOT NULL AUTO_INCREMENT,
-    category_name VARCHAR(100) NOT NULL,
+    id            INTEGER       NOT NULL AUTO_INCREMENT,
+    category_name NVARCHAR(100) NOT NULL,
+    category_code VARCHAR(100)  NOT NULL,
     description   NVARCHAR(255) NOT NULL,
-    active_flag   INTEGER      NOT NULL DEFAULT 1,
-    created_date  TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_date  TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    active_flag   INTEGER       NOT NULL DEFAULT 1,
+    created_date  TIMESTAMP     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_date  TIMESTAMP     NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
 -- DROP TABLE product;
@@ -201,10 +202,10 @@ CREATE TABLE orders
     size             int                     DEFAULT NULL,
     status           int                     DEFAULT NULL,
     total_price      bigint                  DEFAULT NULL,
-    buyer            bigint         DEFAULT NULL,
-    created_by       bigint         DEFAULT NULL,
-    modified_by      bigint         DEFAULT NULL,
-    product_id       INTEGER        DEFAULT NULL,
+    buyer            bigint                  DEFAULT NULL,
+    created_by       bigint                  DEFAULT NULL,
+    modified_by      bigint                  DEFAULT NULL,
+    product_id       INTEGER                 DEFAULT NULL,
     active_flag      INTEGER        NOT NULL DEFAULT 1,
     created_date     TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_date     TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -235,9 +236,8 @@ CREATE TABLE configuration
     PRIMARY KEY (id)
 );
 
-ALTER TABLE user_role
-    ADD CONSTRAINT fk_userRole_user FOREIGN KEY (user_id) REFERENCES user (id),
-ALTER TABLE user_role
+ALTER TABLE user_role ADD CONSTRAINT fk_userRole_user FOREIGN KEY (user_id) REFERENCES user (id);
+    ALTER TABLE user_role
     ADD CONSTRAINT fk_userRole_role FOREIGN KEY (role_id) REFERENCES role (id);
 
 

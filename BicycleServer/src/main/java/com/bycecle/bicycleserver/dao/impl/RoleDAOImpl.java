@@ -8,4 +8,8 @@ import org.springframework.transaction.annotation.Transactional;
 @Component
 @Transactional(rollbackFor = Exception.class)
 public class RoleDAOImpl extends BaseDAOImpl<RoleEntity> implements RoleDAO<RoleEntity> {
+    @Override
+    public RoleEntity findByRoleName(String roleName) {
+        return null;
+    }
 }

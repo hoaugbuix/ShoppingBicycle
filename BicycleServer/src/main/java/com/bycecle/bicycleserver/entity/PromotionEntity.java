@@ -8,7 +8,7 @@ import javax.persistence.Table;
 @Data
 @Entity(name = "promotion")
 @Table(name = "promotion")
-public class PromotionEntity extends BaseEntity{
+public class PromotionEntity extends BaseEntity {
     private String name;
 
     private String couponCode;

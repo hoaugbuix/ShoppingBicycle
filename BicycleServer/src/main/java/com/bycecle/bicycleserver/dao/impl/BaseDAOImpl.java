@@ -167,6 +167,39 @@ public class BaseDAOImpl<E> implements BaseDAO<E> {
     }
 
     @Override
+    public void delete(String sql, Object... parameters) {
+        Connection connection = null;
+        CallableStatement callable = null;
+        try {
+            connection = getConnection();
+            connection.setAutoCommit(false);
+            callable = connection.prepareCall(sql);
+            setCallable(callable, parameters);
+            callable.executeQuery();
+            connection.commit();
+        } catch (SQLException e) {
+            if (connection != null) {
+                try {
+                    connection.rollback();
+                } catch (SQLException e1) {
+                    e.printStackTrace();
+                }
+            }
+        } finally {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+                if (callable != null) {
+                    callable.close();
+                }
+            } catch (SQLException e2) {
+                e2.printStackTrace();
+            }
+        }
+    }
+
+    @Override
     public Integer insert(String sql, Object... parameters) {
         Connection connection = null;
         CallableStatement callable = null;

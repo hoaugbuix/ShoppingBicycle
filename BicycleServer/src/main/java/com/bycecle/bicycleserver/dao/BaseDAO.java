@@ -13,6 +13,8 @@ public interface BaseDAO<E> {
 
     void update(String sql, Object... parameters);
 
+    void delete(String sql, Object... parameters);
+
     Integer insert(String sql, Object... parameters);
 
     int count(String sql, Object... parameters);

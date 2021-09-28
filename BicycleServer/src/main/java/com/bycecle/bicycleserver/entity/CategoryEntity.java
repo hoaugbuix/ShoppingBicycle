@@ -13,6 +13,8 @@ public class CategoryEntity extends BaseEntity {
     @Column(name = "category_name")
     private String categoryName;
 
-    @Column(name = "")
+    private String categoryCode;
+
+    @Column(name = "description")
     private String description;
 }
