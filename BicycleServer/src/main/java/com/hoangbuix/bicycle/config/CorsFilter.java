@@ -1,4 +1,4 @@
-package com.hoangbuix.bicycle.config;//package com.bycecle.bicycleserver.config;
+package com.hoangbuix.bicycle.config;
 //
 //import org.springframework.core.Ordered;
 //import org.springframework.core.annotation.Order;

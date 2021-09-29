@@ -50,9 +50,9 @@ public class UserDAOImpl extends BaseDAOImpl<UserEntity> implements UserDAO<User
     }
 
     @Override
-    public UserEntity findByUsernameOrEmail(String username, String email) {
-        List<UserEntity> users = query(QueryConstant.callQuery(USER, FIND_BY_USERNAME_OR_EMAIL, username, email),
-                new UserMapper(), username, email);
+    public UserEntity findByUsernameOrEmail(String s) {
+        List<UserEntity> users = query(QueryConstant.callQuery(USER, FIND_BY_USERNAME_OR_EMAIL, s),
+                new UserMapper(), s);
         return users.isEmpty() ? null : users.get(0);
     }
 

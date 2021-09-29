@@ -3,10 +3,7 @@ package com.hoangbuix.bicycle.security;
 
 import com.hoangbuix.bicycle.entity.RoleEntity;
 import com.hoangbuix.bicycle.entity.UserEntity;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,6 +15,7 @@ import java.util.Collection;
 @NoArgsConstructor
 @Getter
 @Setter
+@Data
 public class CustomUserDetails implements UserDetails {
     private UserEntity user;
 
@@ -38,7 +36,7 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public String getUsername() {
-        return user.getUsername();
+        return user.getEmail();
     }
 
     @Override

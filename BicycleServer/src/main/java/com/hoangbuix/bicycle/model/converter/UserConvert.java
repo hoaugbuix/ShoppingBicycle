@@ -28,6 +28,7 @@ public class UserConvert {
         dto.setFirstName(entity.getFirstName());
         dto.setLastName(entity.getLastName());
         dto.setAvatar(entity.getAvatar());
+        dto.setEmail(entity.getEmail());
         dto.setUsername(entity.getUsername());
         dto.setPassword(entity.getPassword());
         dto.setActiveFlag(entity.getActiveFlag());
