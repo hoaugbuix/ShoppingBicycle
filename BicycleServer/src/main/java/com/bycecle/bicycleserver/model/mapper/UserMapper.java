@@ -1,9 +1,11 @@
 package com.bycecle.bicycleserver.model.mapper;
 
+import com.bycecle.bicycleserver.entity.RoleEntity;
 import com.bycecle.bicycleserver.entity.UserEntity;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Set;
 
 public class UserMapper implements RowMapper<UserEntity> {
     @Override
@@ -20,6 +22,14 @@ public class UserMapper implements RowMapper<UserEntity> {
             user.setActiveFlag(resultSet.getInt("active_flag"));
             user.setCreatedDate(resultSet.getDate("created_date"));
             user.setUpdatedDate(resultSet.getDate("updated_date"));
+//            try {
+//                RoleEntity role = new RoleEntity();
+//                role.setId(resultSet.getInt("id"));
+//                role.setRoleName(resultSet.getString("role_name"));
+//                user.setRoles(role);
+//            }catch (Exception e){
+//                e.printStackTrace();
+//            }
             return user;
         } catch (SQLException e) {
             e.printStackTrace();

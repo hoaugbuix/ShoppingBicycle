@@ -38,9 +38,6 @@ public class UserServiceImpl implements UserService {
             throw new DuplicateRecordException("Tài khoản đã tồn tại!");
         }
         RoleEntity role = roleDAO.findByRoleName("user");
-        if (role != null) {
-            user.setRoles(Collections.singleton(role));
-        }
         user = UserConvert.toEntity(req);
         int id = userDAO.save(user);
         UserEntity newUser = userDAO.findById(id);

@@ -1,12 +1,10 @@
 package com.bycecle.bicycleserver.model.converter;
 
-import com.bycecle.bicycleserver.entity.RoleEntity;
 import com.bycecle.bicycleserver.entity.UserEntity;
 import com.bycecle.bicycleserver.model.dto.UserDTO;
 import com.bycecle.bicycleserver.model.request.create.CreateUserReq;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
-import java.util.Collections;
 
 public class UserConvert {
     public static UserEntity toEntity(CreateUserReq req) {
@@ -24,6 +22,9 @@ public class UserConvert {
 
     public static UserDTO toDTO(UserEntity entity) {
         UserDTO dto = new UserDTO();
+        if (entity.getId() != null) {
+            dto.setId(entity.getId());
+        }
         dto.setFirstName(entity.getFirstName());
         dto.setLastName(entity.getLastName());
         dto.setAvatar(entity.getAvatar());
@@ -32,9 +33,6 @@ public class UserConvert {
         dto.setActiveFlag(entity.getActiveFlag());
         dto.setCreatedDate(entity.getCreatedDate());
         dto.setUpdatedDate(entity.getUpdatedDate());
-        for (RoleEntity role : entity.getRoles()){
-            dto.setRole(role.getRoleName());
-        }
         return dto;
     }
 }
