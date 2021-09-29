@@ -44,13 +44,13 @@ public class UserServiceImpl implements UserService {
         user = UserConvert.toEntity(req);
         int id = userDAO.save(user);
         UserEntity newUser = userDAO.findById(id);
-        if (newUser != null){
+        if (id != 0){
             UserRoleEntity userRole = new UserRoleEntity();
             userRole.setUsers(newUser);
             userRole.setRoles(role);
             userRoleDAO.save(userRole);
         }
-        return newUser;
+        return userDAO.findById(id);
     }
 
     @Override

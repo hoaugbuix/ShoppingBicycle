@@ -2,13 +2,20 @@ package com.bycecle.bicycleserver.util;
 
 import org.apache.log4j.Logger;
 
+import java.math.BigDecimal;
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class QueryConstant {
     static final Logger log = Logger.getLogger(QueryConstant.class);
 
-    public static String callQuery(String property, String query, Object... parameters) {
+    public static String callQuery(String property, String query,Object... parameters) {
         StringBuilder sql = new StringBuilder();
         sql.append(" call ").append(getGenericName()).append(property);
         sql.append(query).append(getGenericName());
@@ -16,7 +23,7 @@ public class QueryConstant {
         if (parameters != null && parameters.length != 0) {
             sql.append("?");
             for (int i = 0; i < parameters.length; i++) {
-                if (i >= 1) {
+                if (i >= 1 ) {
                     sql.append(getGenericName()).append(", ?");
                 }
             }
@@ -26,7 +33,11 @@ public class QueryConstant {
         return sql.toString();
     }
 
-    public static String getGenericName() {
+    private static void setParam() {
+
+    }
+
+    private static String getGenericName() {
         String s = QueryConstant.class.getGenericSuperclass().toString();
         Pattern pattern = Pattern.compile("\\<(.*?)\\>");
         Matcher m = pattern.matcher(s);

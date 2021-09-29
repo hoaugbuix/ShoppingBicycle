@@ -1,14 +1,93 @@
-2021-09-24 04:51:20 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
-2021-09-24 04:51:21 ERROR BaseDAOImpl:51 - PROCEDURE management_work.user_findById does not exist
-2021-09-24 05:36:31 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
-2021-09-24 05:36:31 ERROR BaseDAOImpl:51 - PROCEDURE management_work.user_findById does not exist
-2021-09-24 06:33:34 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
-2021-09-24 06:33:34 ERROR BaseDAOImpl:51 - PROCEDURE management_work.user_findById does not exist
-2021-09-24 08:45:54 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
-2021-09-24 08:45:54 ERROR BaseDAOImpl:51 - PROCEDURE management_work.user_findById does not exist
-2021-09-24 08:51:12 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
-2021-09-24 08:51:12 ERROR BaseDAOImpl:51 - PROCEDURE management_work.user_findById does not exist
-2021-09-24 09:01:26 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
-2021-09-24 09:01:26 ERROR BaseDAOImpl:51 - PROCEDURE management_work.user_findById does not exist
-2021-09-24 11:26:22 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
-2021-09-24 11:26:22 ERROR BaseDAOImpl:51 - PROCEDURE shopping_bicycle.user_findById does not exist
+2021-09-29 03:10:19 INFO  QueryConstant:25 - ----- string
+2021-09-29 03:10:19 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:10:20 INFO  UserDAOImpl:22 - UserEntity(firstName=string, lastName=string, avatar=string, email=string, username=string, password=$2a$12$Ux277i2GfDQMfIjEUjmtQO/xlPUi.6p6p7uJyJwKUB1ev2TTpB3K., roles=[])
+2021-09-29 03:10:20 INFO  QueryConstant:25 - ----- UserEntity(firstName=string, lastName=string, avatar=string, email=string, username=string, password=$2a$12$Ux277i2GfDQMfIjEUjmtQO/xlPUi.6p6p7uJyJwKUB1ev2TTpB3K., roles=[])
+2021-09-29 03:10:20 INFO  QueryConstant:32 - query property ====>  call user_create(?)
+2021-09-29 03:11:11 INFO  QueryConstant:25 - ----- string
+2021-09-29 03:11:11 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:11:11 INFO  UserDAOImpl:22 - UserEntity(firstName=string, lastName=string, avatar=string, email=string, username=string, password=$2a$12$zuS.FV.ZbF03VjgEYr90Uu1F7iy8TC4zQBV8VwPBgUUTR0Zi7Eaz6, roles=[])
+2021-09-29 03:11:11 INFO  QueryConstant:25 - ----- UserEntity(firstName=string, lastName=string, avatar=string, email=string, username=string, password=$2a$12$zuS.FV.ZbF03VjgEYr90Uu1F7iy8TC4zQBV8VwPBgUUTR0Zi7Eaz6, roles=[])
+2021-09-29 03:11:11 INFO  QueryConstant:32 - query property ====>  call user_create(?)
+2021-09-29 03:12:22 INFO  QueryConstant:25 - ----- 6
+2021-09-29 03:12:22 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?, ?)
+2021-09-29 03:12:22 ERROR BaseDAOImpl:51 - No value specified for parameter 2
+2021-09-29 03:13:48 INFO  QueryConstant:25 - ----- 6
+2021-09-29 03:13:48 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?, ?)
+2021-09-29 03:13:48 ERROR BaseDAOImpl:51 - No value specified for parameter 2
+2021-09-29 03:14:42 INFO  QueryConstant:25 - ----- 6
+2021-09-29 03:14:42 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?, ?)
+2021-09-29 03:14:42 ERROR BaseDAOImpl:51 - No value specified for parameter 2
+2021-09-29 03:15:04 INFO  QueryConstant:25 - ----- 6
+2021-09-29 03:15:04 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?, ?)
+2021-09-29 03:15:04 ERROR BaseDAOImpl:51 - No value specified for parameter 2
+2021-09-29 03:17:22 INFO  QueryConstant:25 - ----- 6
+2021-09-29 03:17:22 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?, ?)
+2021-09-29 03:17:22 ERROR BaseDAOImpl:51 - No value specified for parameter 2
+2021-09-29 03:18:05 INFO  QueryConstant:25 - ----- 6
+2021-09-29 03:18:05 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?, ?)
+2021-09-29 03:18:06 ERROR BaseDAOImpl:51 - No value specified for parameter 2
+2021-09-29 03:18:27 INFO  QueryConstant:25 - ----- 6
+2021-09-29 03:19:05 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?, ?)
+2021-09-29 03:19:05 ERROR BaseDAOImpl:51 - No value specified for parameter 2
+2021-09-29 03:19:34 INFO  QueryConstant:25 - ----- 6
+2021-09-29 03:19:43 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?, ?)
+2021-09-29 03:19:46 ERROR BaseDAOImpl:51 - No value specified for parameter 2
+2021-09-29 03:21:08 INFO  QueryConstant:25 - ----- 6
+2021-09-29 03:21:13 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:21:24 INFO  UserDAOImpl:22 - UserEntity(firstName=string, lastName=string, avatar=string, email=string, username=string, password=$2a$12$1rHM9XGEIb3CR2lK.aeYf.Yh.k73.egS5FQ7L3EZPHOaSDChy3v2C, roles=[])
+2021-09-29 03:21:41 INFO  QueryConstant:25 - ----- 172
+2021-09-29 03:22:17 INFO  QueryConstant:32 - query property ====>  call user_create(?)
+2021-09-29 03:30:54 INFO  QueryConstant:26 - -----[string]
+2021-09-29 03:30:54 INFO  QueryConstant:34 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:30:59 INFO  UserDAOImpl:22 - UserEntity(firstName=string, lastName=string, avatar=string, email=string, username=string, password=$2a$12$4AfaQH4tzm5Uekv6kVfAsez/67teafWs31X3n8hjbxZFHcSpmwVnm, roles=[])
+2021-09-29 03:31:01 INFO  QueryConstant:26 - -----[UserEntity(firstName=string, lastName=string, avatar=string, email=string, username=string, password=$2a$12$4AfaQH4tzm5Uekv6kVfAsez/67teafWs31X3n8hjbxZFHcSpmwVnm, roles=[])]
+2021-09-29 03:31:01 INFO  QueryConstant:34 - query property ====>  call user_create(?)
+2021-09-29 03:33:20 INFO  QueryConstant:26 - -----1
+2021-09-29 03:33:20 INFO  QueryConstant:34 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:33:21 INFO  UserDAOImpl:22 - UserEntity(firstName=string, lastName=string, avatar=string, email=string, username=string, password=$2a$12$HFj0KwKoIxI/GsLAdoQvNuY3PO.6MVs34sUj15xtsnRCyZltJMCNq, roles=[])
+2021-09-29 03:33:21 INFO  QueryConstant:26 - -----1
+2021-09-29 03:33:21 INFO  QueryConstant:34 - query property ====>  call user_create(?)
+2021-09-29 03:36:38 INFO  QueryConstant:26 - -----[string]
+2021-09-29 03:36:38 INFO  QueryConstant:34 - query property ====>  call user_findByEmail(?, ?)
+2021-09-29 03:36:38 ERROR BaseDAOImpl:51 - No value specified for parameter 2
+2021-09-29 03:37:47 INFO  QueryConstant:26 - -----[string]
+2021-09-29 03:37:47 INFO  QueryConstant:34 - query property ====>  call user_findByEmail(?, ?)
+2021-09-29 03:37:47 ERROR BaseDAOImpl:51 - No value specified for parameter 2
+2021-09-29 03:38:34 INFO  QueryConstant:26 - -----[string]
+2021-09-29 03:38:34 INFO  QueryConstant:34 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:38:34 INFO  UserDAOImpl:22 - UserEntity(firstName=string, lastName=string, avatar=string, email=string, username=string, password=$2a$12$n3c0fhn8rlsuNvBmCSYjBeQ7uKAJVFWpsbBFxD.WWxa0lF4yftjRm, roles=[])
+2021-09-29 03:38:34 INFO  QueryConstant:26 - -----[UserEntity(firstName=string, lastName=string, avatar=string, email=string, username=string, password=$2a$12$n3c0fhn8rlsuNvBmCSYjBeQ7uKAJVFWpsbBFxD.WWxa0lF4yftjRm, roles=[])]
+2021-09-29 03:38:34 INFO  QueryConstant:34 - query property ====>  call user_create(?)
+2021-09-29 03:41:37 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:41:37 INFO  UserDAOImpl:22 - UserEntity(firstName=string, lastName=string, avatar=string, email=string, username=string, password=$2a$12$T1eoE.H/nldq2TQx34OKE.naj52C4Vo8C9/S/l6X43rGs7Pgb35k2, roles=[])
+2021-09-29 03:41:37 INFO  QueryConstant:32 - query property ====>  call user_create(?, ?, ?, ?, ?)
+2021-09-29 03:43:06 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:43:06 INFO  UserDAOImpl:22 - UserEntity(firstName=string, lastName=string, avatar=string, email=string, username=string, password=$2a$12$tnYik9UrfLHBPihW1gKC4eIsfxTY1FuKH670pQmI3Hc3Eswqc0fA2, roles=[])
+2021-09-29 03:43:06 INFO  QueryConstant:32 - query property ====>  call user_create(?)
+2021-09-29 03:44:50 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:44:51 INFO  QueryConstant:32 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-09-29 03:44:51 INFO  QueryConstant:32 - query property ====>  call user_findById(?)
+2021-09-29 03:44:51 INFO  QueryConstant:32 - query property ====>  call userRole_create(?)
+2021-09-29 03:45:59 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:51:06 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:51:07 INFO  QueryConstant:32 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-09-29 03:51:07 INFO  QueryConstant:32 - query property ====>  call user_findById(?)
+2021-09-29 03:55:07 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:55:08 INFO  QueryConstant:32 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-09-29 03:55:08 INFO  QueryConstant:32 - query property ====>  call user_findById(?)
+2021-09-29 03:56:56 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 03:57:41 INFO  QueryConstant:32 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-09-29 03:58:05 INFO  QueryConstant:32 - query property ====>  call user_findById(?)
+2021-09-29 04:03:37 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 04:04:08 INFO  QueryConstant:32 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-09-29 04:04:28 INFO  QueryConstant:32 - query property ====>  call user_findById(?)
+2021-09-29 04:09:58 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 04:11:27 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 04:12:00 INFO  QueryConstant:32 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-09-29 04:12:23 INFO  QueryConstant:32 - query property ====>  call user_findById(?)
+2021-09-29 04:15:14 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 04:15:22 INFO  QueryConstant:32 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-09-29 04:15:38 INFO  QueryConstant:32 - query property ====>  call user_findById(?)
+2021-09-29 04:18:30 INFO  QueryConstant:32 - query property ====>  call user_findByEmail(?)
+2021-09-29 04:18:37 INFO  QueryConstant:32 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-09-29 04:18:53 INFO  QueryConstant:32 - query property ====>  call user_findById(?)

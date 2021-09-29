@@ -135,6 +135,7 @@ CREATE TABLE product
 (
     id            INTEGER        NOT NULL AUTO_INCREMENT,
     product_name  VARCHAR(100)   NOT NULL,
+    product_code  VARCHAR(100)   NOT NULL,
     description   VARCHAR(255)   NOT NULL,
     slug          VARCHAR(255)   NOT NULL,
     brand_id      INTEGER        NOT NULL,

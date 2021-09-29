@@ -12,6 +12,7 @@ import java.util.Set;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 @Entity(name = "user")
 @Table(name = "user")
 public class UserEntity extends BaseEntity {

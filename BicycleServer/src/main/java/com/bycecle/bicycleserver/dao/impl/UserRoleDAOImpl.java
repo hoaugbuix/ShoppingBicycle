@@ -17,13 +17,15 @@ public class UserRoleDAOImpl extends BaseDAOImpl<UserRoleEntity> implements User
 
     @Override
     public int save(UserRoleEntity userRole) {
-        return insert(QueryConstant.callQuery(USER_ROLE, SqlConstant.CREATE, userRole), userRole.getUsers().getId(),
+        return insert(QueryConstant.callQuery(USER_ROLE, SqlConstant.CREATE, userRole.getUsers().getId(),
+                        userRole.getRoles().getId()), userRole.getUsers().getId(),
                 userRole.getRoles().getId());
     }
 
     @Override
     public void update(UserRoleEntity userRole) {
-        update(QueryConstant.callQuery(USER_ROLE, SqlConstant.UPDATE, userRole), userRole.getUsers().getId(),
+        update(QueryConstant.callQuery(USER_ROLE, SqlConstant.UPDATE, userRole.getUsers().getId(),
+                        userRole.getRoles().getId()), userRole.getUsers().getId(),
                 userRole.getRoles().getId(), userRole.getActiveFlag());
     }
 

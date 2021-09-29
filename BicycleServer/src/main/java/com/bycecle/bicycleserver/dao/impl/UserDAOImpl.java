@@ -4,6 +4,7 @@ import com.bycecle.bicycleserver.dao.UserDAO;
 import com.bycecle.bicycleserver.entity.UserEntity;
 import com.bycecle.bicycleserver.model.mapper.UserMapper;
 import com.bycecle.bicycleserver.util.QueryConstant;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,17 +14,20 @@ import static com.bycecle.bicycleserver.util.SqlConstant.*;
 @Component
 @Transactional(rollbackFor = Exception.class)
 public class UserDAOImpl extends BaseDAOImpl<UserEntity> implements UserDAO<UserEntity> {
+    final Logger log = Logger.getLogger(UserDAOImpl.class);
     private final String USER = "user";
 
     @Override
     public int save(UserEntity user) {
-        return insert(QueryConstant.callQuery(USER, CREATE, user), user.getFirstName(), user.getLastName(),
+        return insert(QueryConstant.callQuery(USER, CREATE, user.getFirstName(), user.getLastName(),
+                        user.getAvatar(), user.getUsername(), user.getPassword(), user.getEmail() ), user.getFirstName(), user.getLastName(),
                 user.getAvatar(), user.getUsername(), user.getPassword(), user.getEmail());
     }
 
     @Override
     public void update(UserEntity user) {
-        update(QueryConstant.callQuery(USER, UPDATE, user), user.getFirstName(), user.getLastName(),
+        update(QueryConstant.callQuery(USER, UPDATE, user.getFirstName(), user.getLastName(),
+                        user.getAvatar(), user.getUsername(), user.getPassword(), user.getEmail()), user.getFirstName(), user.getLastName(),
                 user.getAvatar(), user.getUsername(), user.getPassword(), user.getEmail());
     }
 
