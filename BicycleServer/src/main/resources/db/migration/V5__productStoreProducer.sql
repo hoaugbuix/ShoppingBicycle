@@ -1,5 +1,3 @@
-
-
 drop procedure if EXISTS product_findAll;
 DELIMITER $$
 CREATE PROCEDURE product_findAll()

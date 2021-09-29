@@ -8,7 +8,7 @@ body:
 BEGIN
     declare newId int;
     SET max_sp_recursion_depth = 255;
-   --  if
+    --  if
 --             (
 --                 select count(user_role.id)
 --                 from user_role
@@ -17,9 +17,9 @@ BEGIN
 --         SIGNAL
 --             SQLSTATE '45000' SET MESSAGE_TEXT = @message_text;
 --     else
-        insert into user_role(user_id, role_id, active_flag, created_date, updated_date)
-        values (_userId, _roleId, 1, now(), now());
-        set newId = last_insert_id();
+    insert into user_role(user_id, role_id, active_flag, created_date, updated_date)
+    values (_userId, _roleId, 1, now(), now());
+    set newId = last_insert_id();
     -- end if;
     select newId;
 END$$
