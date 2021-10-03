@@ -22,6 +22,10 @@
     display: block;
 }
 
+.header__navbar-item--has-notify:hover .header__notify {
+    display: block;
+}
+
 .header__navbar-item, 
 .header__navbar-item-link {
     display: inline-block;
@@ -115,4 +119,105 @@
 
 .header__qr-download-img {
     height: 16px;
+}
+
+/* Notify */
+
+.header__notify{
+    display: none;
+    position: absolute;
+    top: 118%;
+    right: 0;
+    width: 404px;
+    border: 1px solid #D3D3D3;
+    background-color: var(--white-color);
+    cursor: default;
+    transform-origin: calc(100% -20px) top;
+    animation: headerNotifyGrowth ease-in 0.2s;
+}
+
+.header__notify::before {
+    content: "";
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    right: 0px;
+    top: -30px;
+    position: absolute;
+}
+
+@keyframes headerNotifyGrowth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header__notify-header{
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.header__notify-header h3 {
+    color: #666;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+    margin:0 0 0 12px;
+}
+
+.header__notify-list{
+    padding-left: 0;
+    
+}
+.header__notify-item{
+    display: flex;
+}
+
+.header__notify-item:hover {
+    background-color: rgba(205, 226, 206, 0.7);
+}
+.header__notify-link{
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    text-decoration: none;
+    background-color: rgba(214, 113, 113, 0.7);
+}
+.header__notify-img{
+    width: 48px;
+    object-fit: contain;
+}
+.header__notify-info{
+    margin-left: 12px;
+}
+.header__notify-info-name{
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: var(--black-color);
+}
+.header__notify-info-description{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #888;
+    margin-top: 4px;
+}
+.header__notify-footer {
+    display: flex;
+}
+
+.header__notify-footer-btn {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 8px 0;
+    width: 100%;
+    /* margin: auto; */
+    text-align: center;
 }
