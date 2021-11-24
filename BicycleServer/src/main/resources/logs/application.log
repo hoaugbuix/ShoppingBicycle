@@ -157,3 +157,268 @@
 2021-09-29 10:16:46 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
 2021-09-29 10:16:46 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
 2021-09-29 10:16:46 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-22 20:18:12 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-22 20:18:12 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-22 20:18:20 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-22 20:18:20 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2021-11-22 20:18:21 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-11-22 20:18:21 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-11-22 20:18:21 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2021-11-22 20:18:21 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-11-22 20:18:28 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-22 20:18:28 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-22 20:18:28 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-22 20:18:28 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 05:18:30 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 05:18:30 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 05:18:30 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 05:20:02 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 05:20:02 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 05:22:18 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 05:22:18 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 05:22:22 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 05:22:22 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 12:17:04 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 12:17:04 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 12:17:04 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 12:17:17 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 12:17:17 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 12:17:17 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 12:17:26 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 12:17:26 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 12:17:26 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:04:19 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:04:19 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:04:29 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:04:29 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:04:35 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:04:35 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:05:09 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:05:09 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:05:53 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:05:54 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:06:49 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:06:49 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:07:27 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:07:27 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:07:29 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:07:29 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:07:34 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:07:34 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:07:35 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:07:35 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:07:38 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:07:38 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:07:40 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:07:40 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:07:41 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:07:41 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:07:42 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:07:42 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:07:43 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:07:43 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:07:44 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:07:44 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:08:56 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:08:56 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:09:01 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:09:01 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:09:05 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:09:05 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:09:38 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:09:38 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:09:40 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:09:40 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:12:31 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:12:31 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:12:40 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:12:40 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:13:01 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:13:01 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2021-11-23 20:13:02 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-11-23 20:13:02 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-11-23 20:13:02 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2021-11-23 20:13:02 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-11-23 20:13:08 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:13:08 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:13:09 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:13:09 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:13:15 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:13:15 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:13:15 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:13:31 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:13:31 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:13:31 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:13:34 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:13:34 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:13:34 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:18:05 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:18:05 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:18:09 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:18:09 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2021-11-23 20:18:10 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-11-23 20:18:10 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-11-23 20:18:10 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2021-11-23 20:18:10 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-11-23 20:18:14 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:18:14 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:18:14 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:18:14 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:18:18 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:18:18 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:18:18 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:18:20 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:18:20 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:18:21 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:18:21 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:18:21 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:18:21 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:21:24 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-23 20:21:24 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-23 20:21:34 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:23:37 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:24:04 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:25:08 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:29:01 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:29:57 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:53:46 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:54:17 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:55:24 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 20:56:35 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 21:00:01 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 21:02:57 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 21:09:25 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 21:10:38 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 21:13:27 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-23 21:16:18 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?, ?)
+2021-11-23 21:22:46 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?, ?)
+2021-11-23 21:25:23 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?, ?)
+2021-11-24 19:54:39 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?, ?)
+2021-11-24 19:56:46 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?, ?)
+2021-11-24 19:57:57 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?, ?)
+2021-11-24 19:58:18 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?, ?)
+2021-11-24 20:19:52 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 20:21:11 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 20:27:57 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 20:30:07 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 20:34:32 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 20:39:41 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 20:41:34 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 20:49:00 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 20:49:00 INFO  ImageDAOImpl:26 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 20:49:00 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 20:49:38 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 20:50:04 INFO  ImageDAOImpl:26 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 20:50:09 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 20:54:51 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-24 20:54:51 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-24 20:55:04 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-11-24 20:55:04 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-11-24 20:55:25 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 20:55:25 INFO  ImageDAOImpl:26 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 20:55:31 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 20:56:35 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 20:56:36 INFO  ImageDAOImpl:26 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 20:56:42 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 20:59:46 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 20:59:47 INFO  ImageDAOImpl:26 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 20:59:57 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:00:06 INFO  BaseDAOImpl:204 - insert[Ljava.lang.Object;@ecea016
+2021-11-24 21:01:16 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:01:16 INFO  ImageDAOImpl:26 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:01:20 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:01:22 INFO  BaseDAOImpl:205 - insert[]
+2021-11-24 21:04:14 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:04:14 INFO  ImageDAOImpl:26 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=19227, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:04:17 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:04:17 INFO  BaseDAOImpl:205 - insert[]
+2021-11-24 21:07:55 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:07:59 INFO  ImageDAOImpl:26 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:08:04 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:08:20 INFO  BaseDAOImpl:205 - insert[]
+2021-11-24 21:13:43 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:13:43 INFO  ImageDAOImpl:26 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:13:43 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:13:43 INFO  BaseDAOImpl:205 - insert[]
+2021-11-24 21:13:45 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:13:45 INFO  ImageDAOImpl:26 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:13:45 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:13:45 INFO  BaseDAOImpl:205 - insert[]
+2021-11-24 21:16:43 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:16:43 INFO  ImageDAOImpl:26 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:16:43 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:16:43 INFO  BaseDAOImpl:205 - insert[]
+2021-11-24 21:26:30 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:26:30 INFO  ImageDAOImpl:26 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:26:30 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:26:30 INFO  BaseDAOImpl:205 - insert[]
+2021-11-24 21:28:01 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:28:01 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:28:01 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-24 21:28:01 INFO  BaseDAOImpl:205 - insert[]
+2021-11-24 21:30:55 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:30:55 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:30:55 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-24 21:30:55 INFO  BaseDAOImpl:205 - insert[]
+2021-11-24 21:33:49 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:33:49 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:33:49 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:33:49 INFO  BaseDAOImpl:205 - insert =>>> []
+2021-11-24 21:35:18 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:35:18 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:35:18 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:35:18 INFO  BaseDAOImpl:205 - insert =>>> []
+2021-11-24 21:35:19 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:35:19 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:35:19 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:35:19 INFO  BaseDAOImpl:205 - insert =>>> []
+2021-11-24 21:35:20 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:35:20 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:35:20 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:35:20 INFO  BaseDAOImpl:205 - insert =>>> []
+2021-11-24 21:35:21 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:35:21 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:35:21 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:35:21 INFO  BaseDAOImpl:205 - insert =>>> []
+2021-11-24 21:37:17 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:37:17 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:37:17 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:37:17 INFO  BaseDAOImpl:205 - insert =>>> []
+2021-11-24 21:37:19 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:37:19 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:37:19 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:37:19 INFO  BaseDAOImpl:205 - insert =>>> []
+2021-11-24 21:37:23 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:37:23 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:37:23 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:37:23 INFO  BaseDAOImpl:205 - insert =>>> []
+2021-11-24 21:38:37 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:38:37 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:38:37 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:38:37 INFO  BaseDAOImpl:205 - insert =>>> []
+2021-11-24 21:38:44 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:38:44 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:38:44 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:38:44 INFO  BaseDAOImpl:205 - insert =>>> []
+2021-11-24 21:40:00 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:40:11 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:40:16 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:40:57 INFO  BaseDAOImpl:205 - insert =>>> []
+2021-11-24 21:42:03 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:42:05 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:42:08 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-24 21:42:11 INFO  BaseDAOImpl:205 - insert =>>> [/media/static/file.png, file, 228, png, 1, 1]
+2021-11-24 21:43:33 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:43:35 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:43:38 INFO  QueryConstant:25 - query property ====>  call image_create(?)
+2021-11-24 21:43:40 INFO  BaseDAOImpl:205 - insert =>>> [/media/static/file.png, file, 228, png, 1, 1]
+2021-11-24 21:44:41 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:44:42 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:44:45 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:44:48 INFO  BaseDAOImpl:205 - insert =>>> [/media/static/file.png, file, 228, png, 1, 1]
+2021-11-24 21:46:33 INFO  ImageServiceImpl:23 - save imageImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:46:34 INFO  ImageDAOImpl:27 - ImageDAOImpl saveImageEntity(link=/media/static/file.png, fileName=file, size=228, fileType=png, postId=1, uploadBy=1)
+2021-11-24 21:46:36 INFO  QueryConstant:25 - query property ====>  call image_create(?, ?, ?, ?, ?, ?)
+2021-11-24 21:46:38 INFO  BaseDAOImpl:205 - insert =>>> [/media/static/file.png, file, png, 228, 1, 1]
+2021-11-24 21:47:02 INFO  QueryConstant:25 - query property ====>  call image_findById(?)
+2021-11-24 21:47:02 ERROR BaseDAOImpl:52 - PROCEDURE shopping_bicycle.image_findById does not exist

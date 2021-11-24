@@ -11,6 +11,7 @@ import javax.sql.DataSource;
 import java.math.BigDecimal;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Component
@@ -201,6 +202,7 @@ public class BaseDAOImpl<E> implements BaseDAO<E> {
 
     @Override
     public Integer insert(String sql, Object... parameters) {
+        log.info("insert =>>> " + Arrays.toString(parameters));
         Connection connection = null;
         CallableStatement callable = null;
         ResultSet resultSet = null;

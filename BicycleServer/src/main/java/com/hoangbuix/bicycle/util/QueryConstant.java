@@ -22,12 +22,8 @@ public class QueryConstant {
             }
         }
         sql.append(")");
-        log.info("query property ====> " + sql);
+        log.info("query property ====> " + sql.toString());
         return sql.toString();
-    }
-
-    private static void setParam() {
-
     }
 
     private static String getGenericName() {

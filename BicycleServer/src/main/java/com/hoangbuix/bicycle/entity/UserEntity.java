@@ -9,10 +9,8 @@ import java.util.Set;
 
 @Setter
 @Getter
-@Data
 @AllArgsConstructor
-@NoArgsConstructor
-@ToString
+@Data
 @Entity(name = "user")
 @Table(name = "user")
 public class UserEntity extends BaseEntity {
@@ -40,4 +38,7 @@ public class UserEntity extends BaseEntity {
             joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
             inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     private Set<RoleEntity> roles = new HashSet<>();
+
+    public UserEntity() {
+    }
 }

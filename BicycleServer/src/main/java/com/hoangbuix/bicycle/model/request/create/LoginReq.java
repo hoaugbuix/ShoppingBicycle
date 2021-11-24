@@ -1,14 +1,17 @@
 package com.hoangbuix.bicycle.model.request.create;
 
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import lombok.*;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-@Data
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class LoginReq {
     @NotNull(message = "Email trống")
     @NotEmpty(message = "Email trống")
@@ -29,4 +32,5 @@ public class LoginReq {
             required = true
     )
     private String password;
+
 }

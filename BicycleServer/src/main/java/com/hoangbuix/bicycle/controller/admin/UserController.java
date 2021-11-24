@@ -1,4 +1,4 @@
-package com.hoangbuix.bicycle.controller.anonymous;
+package com.hoangbuix.bicycle.controller.admin;
 
 import com.hoangbuix.bicycle.entity.UserEntity;
 import com.hoangbuix.bicycle.exception.BadRequestException;

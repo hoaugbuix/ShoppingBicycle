@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 
 @Setter
@@ -15,17 +16,23 @@ import javax.persistence.Table;
 @Table(name = "image")
 public class ImageEntity extends BaseEntity {
 
-    @Column(name = "link")
+    @Column(name = "link", unique = true)
     private String link;
 
-    @Column(name = "fileName")
+    @Column(name = "file_name")
     private String fileName;
 
     @Column(name = "size")
-    private String size;
+    private long size;
 
-    @Column(name = "type")
-    private String type;
+    @Column(name = "file_type")
+    private String fileType;
+
+    @Column(name = "post_id")
+    private long postId;
+
+    @Column(name = "upload_by")
+    private long uploadBy;
 
 //    @ManyToOne(fetch = FetchType.LAZY)
 //    @JoinColumn(name = "post_id")
