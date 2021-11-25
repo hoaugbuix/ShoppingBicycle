@@ -1,15 +1,19 @@
 package com.hoangbuix.bicycle.controller.admin;
 
 import com.hoangbuix.bicycle.entity.ImageEntity;
+import com.hoangbuix.bicycle.entity.UserEntity;
 import com.hoangbuix.bicycle.exception.BadRequestException;
 import com.hoangbuix.bicycle.exception.InternalServerException;
 import com.hoangbuix.bicycle.exception.NotFoundException;
 import com.hoangbuix.bicycle.security.CustomUserDetails;
 import com.hoangbuix.bicycle.service.ImageService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +23,9 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.net.MalformedURLException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.Timestamp;
 
 @RestController
@@ -49,10 +56,10 @@ public class ImageController {
                 img.setFileName(file.getName());
                 img.setSize(file.getSize());
                 img.setFileType(extension);
-                img.setUploadBy(1);
                 img.setPostId(1);
-//                img.setUploadBy(((CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUser());
-                String link = "/media/static/" + img.getFileName() + "." + extension;
+                UserEntity user = ((CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUser();
+                img.setUploadBy(user.getId());
+                String link = "/media/upload/" + img.getFileName() + "." + extension;
                 img.setLink(link);
 
                 // Create file
@@ -88,6 +95,26 @@ public class ImageController {
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + file.getName() + "\"")
                 .body(resource);
     }
+
+
+    @GetMapping("/get-image/{filename:.+}")
+    public ResponseEntity<ByteArrayResource> getImag(@PathVariable("filename") String filename){
+        if(!filename.equals("") || filename != null){
+            try {
+                Path fileName = Paths.get(UPLOAD_DIR , filename);
+                byte[] buffer = Files.readAllBytes(fileName);
+                ByteArrayResource byteArrayResource = new ByteArrayResource(buffer);
+                return ResponseEntity.ok()
+                        .contentLength(buffer.length)
+                        .contentType(MediaType.parseMediaType("image/png")).body(byteArrayResource);
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        return ResponseEntity.badRequest().build();
+    }
+
 
     @DeleteMapping("/api/delete-image/{filename:.+}")
     public ResponseEntity<?> deleteFile(@PathVariable String filename) {

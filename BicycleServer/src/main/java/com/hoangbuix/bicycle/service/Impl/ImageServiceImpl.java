@@ -7,10 +7,13 @@ import com.hoangbuix.bicycle.exception.InternalServerException;
 import com.hoangbuix.bicycle.service.ImageService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 @Component
 public class ImageServiceImpl implements ImageService {
@@ -31,6 +34,8 @@ public class ImageServiceImpl implements ImageService {
         int id = imageDAO.save(image);
         return imageDAO.findById(id);
     }
+
+
 
     @Override
     @Transactional(rollbackFor = InternalServerException.class)
@@ -57,4 +62,5 @@ public class ImageServiceImpl implements ImageService {
             }
         }
     }
+
 }
