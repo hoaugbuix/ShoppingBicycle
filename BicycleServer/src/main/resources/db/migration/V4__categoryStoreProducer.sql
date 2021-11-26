@@ -62,9 +62,9 @@ end$$
 DELIMITER ;
 
 
-drop procedure if EXISTS category_findCategoryById;
+drop procedure if EXISTS category_findById;
 DELIMITER $$
-CREATE PROCEDURE category_findCategoryById(in _id int)
+CREATE PROCEDURE category_findById(in _id int)
 begin
     select *
     from category

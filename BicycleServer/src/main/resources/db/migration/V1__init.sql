@@ -142,6 +142,7 @@ CREATE TABLE product
     price         DECIMAL(50, 2) NOT NULL,
     product_image VARCHAR(255)   NOT NULL,
     total_sold    INT            NOT NULL,
+    category_id   INT            NOT NULL,
     active_flag   INTEGER        NOT NULL DEFAULT 1,
     created_date  TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_date  TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,

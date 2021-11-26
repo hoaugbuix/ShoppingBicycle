@@ -30,7 +30,7 @@ import java.sql.Timestamp;
 
 @RestController
 @RequestMapping("/image")
-public class ImageController {
+public class ManagementImageController {
 
     @Autowired
     private ImageService imageService;

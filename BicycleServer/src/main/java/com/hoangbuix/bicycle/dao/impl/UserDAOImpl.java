@@ -39,6 +39,7 @@ public class UserDAOImpl extends BaseDAOImpl<UserEntity> implements UserDAO<User
 
     @Override
     public List<UserEntity> findAll() {
+        log.info("find All");
         return query(QueryConstant.callQuery(USER, FIND_ALL, null), new UserMapper());
     }
 
