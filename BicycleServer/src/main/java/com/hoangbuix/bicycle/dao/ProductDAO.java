@@ -3,5 +3,6 @@ package com.hoangbuix.bicycle.dao;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ProductionDAO<E> extends CommonDAO<E> {
+public interface ProductDAO<E> extends CommonDAO<E> {
+    E findByProductName(String productName);
 }
