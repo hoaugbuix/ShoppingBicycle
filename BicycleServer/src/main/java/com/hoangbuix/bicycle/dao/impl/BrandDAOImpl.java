@@ -22,7 +22,9 @@ public class BrandDAOImpl extends BaseDAOImpl<BrandEntity> implements BrandDAO<B
 
     @Override
     public void update(BrandEntity brand) {
-        update(QueryConstant.callQuery(BRAND, SqlConstant.UPDATE, brand.getBrandName(), brand.getThumbnail(), brand.getActiveFlag()), brand.getBrandName(), brand.getThumbnail(), brand.getActiveFlag());
+        update(QueryConstant.callQuery(BRAND, SqlConstant.UPDATE, brand.getId(),
+                brand.getBrandName(), brand.getThumbnail(), brand.getActiveFlag()),
+                brand.getId(), brand.getBrandName(), brand.getThumbnail(), brand.getActiveFlag());
     }
 
     @Override
@@ -39,6 +41,13 @@ public class BrandDAOImpl extends BaseDAOImpl<BrandEntity> implements BrandDAO<B
     @Override
     public BrandEntity findById(int id) {
         List<BrandEntity> brand = query(QueryConstant.callQuery(BRAND, SqlConstant.FIND_BY_ID, id), new BrandMapper(), id);
+        return brand.isEmpty() ? null : brand.get(0);
+    }
+
+    @Override
+    public BrandEntity findByBrandName(String brandName) {
+        List<BrandEntity> brand = query(QueryConstant.callQuery(BRAND, (SqlConstant.FIND_BY_ + "BrandName"), brandName),
+                new BrandMapper(), brandName);
         return brand.isEmpty() ? null : brand.get(0);
     }
 }

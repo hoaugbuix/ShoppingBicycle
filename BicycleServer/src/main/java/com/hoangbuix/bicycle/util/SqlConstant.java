@@ -7,6 +7,7 @@ public class SqlConstant {
     public static final String FIND_ALL = "_findAll";
     public static final String FIND_BY_ID = "_findById";
     public static final String FIND_BY_CODE = "_findByCode";
+    public static final String FIND_BY_ = "_findBy";
 
     // User
     public static final String FIND_BY_USERNAME_OR_EMAIL = "_findByUserNameOrEmail";

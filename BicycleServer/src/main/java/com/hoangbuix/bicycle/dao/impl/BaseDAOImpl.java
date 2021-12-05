@@ -27,7 +27,7 @@ public class BaseDAOImpl<E> implements BaseDAO<E> {
         try {
             return dataSource.getConnection();
         } catch (SQLException e) {
-            log.info(e.getMessage());
+            log.error(e.getMessage());
             e.printStackTrace();
             return null;
         }
@@ -131,11 +131,13 @@ public class BaseDAOImpl<E> implements BaseDAO<E> {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            log.error(e.getMessage());
         }
     }
 
     @Override
     public void update(String sql, Object... parameters) {
+        log.info("===> updating ... " + Arrays.toString(parameters));
         Connection connection = null;
         CallableStatement callable = null;
         try {
@@ -151,8 +153,10 @@ public class BaseDAOImpl<E> implements BaseDAO<E> {
                     connection.rollback();
                 } catch (SQLException e1) {
                     e.printStackTrace();
+                    log.error(e.getMessage());
                 }
             }
+            log.error(e.getMessage());
         } finally {
             try {
                 if (connection != null) {
@@ -163,6 +167,7 @@ public class BaseDAOImpl<E> implements BaseDAO<E> {
                 }
             } catch (SQLException e2) {
                 e2.printStackTrace();
+                log.error(e2.getMessage());
             }
         }
     }
@@ -230,6 +235,7 @@ public class BaseDAOImpl<E> implements BaseDAO<E> {
                     return null;
                 }
             }
+            log.error(e.getMessage());
         } finally {
             try {
                 if (connection != null) {
