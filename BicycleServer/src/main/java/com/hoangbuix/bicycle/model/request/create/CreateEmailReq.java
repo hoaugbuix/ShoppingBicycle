@@ -1,4 +1,4 @@
-package com.hoangbuix.bicycle.model.request.update;
+package com.hoangbuix.bicycle.model.request.create;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class UpdateBrandReq {
+public class CreateEmailReq {
     //    @NotNull(message = "Brand Name trống")
 //    @NotEmpty(message = "Brand Name trống")
 //    @Email(message = "Brand Name không đúng định dạng")
@@ -16,7 +16,7 @@ public class UpdateBrandReq {
 //            notes = "Brand Name trống",
 //            required = true
 //    )
-    private String brandName;
+    private String contentEmail;
 
     //    @NotNull(message = "Thumbnail")
 //    @NotEmpty(message = "Thumbnail trống")
@@ -25,14 +25,5 @@ public class UpdateBrandReq {
 //            notes = "Thumbnail trống",
 //            required = true
 //    )
-    private String thumbnail;
-
-    //    @NotNull(message = "Active Flag")
-//    @NotEmpty(message = "Active Flag trống")
-//    @ApiModelProperty(
-//            example = "Active Flag",
-//            notes = "Active Flag trống",
-//            required = true
-//    )
-    private int activeFlag;
+    private long seen;
 }

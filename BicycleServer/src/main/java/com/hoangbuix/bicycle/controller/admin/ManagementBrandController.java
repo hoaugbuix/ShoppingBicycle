@@ -22,18 +22,18 @@ public class ManagementBrandController {
     private BrandService brandService;
 
     @PostMapping("create-brand")
-    private ResponseEntity<?> create(@Valid @RequestBody CreateBrandReq brand){
+    private ResponseEntity<?> create(@Valid @RequestBody CreateBrandReq brand) {
         int id = 0;
         BrandEntity brnd = null;
         try {
             BrandEntity brn = brandService.findByBrandName(brand.getBrandName());
-            if (brn == null) {
-                id = brandService.save(brand);
-            } else {
+            if (brn.getBrandName().equals(brand.getBrandName())){
                 throw new BadRequestException("Đã tồn tại");
+            } else  {
+                id = brandService.save(brand);
             }
             brnd = brandService.findById(id);
-        }catch (Exception e){
+        } catch (Exception e) {
 //            e.printStackTrace();
             throw new BadRequestException("lỗi crete");
         }
@@ -41,20 +41,20 @@ public class ManagementBrandController {
     }
 
     @PostMapping("update-brand/{id}")
-    private ResponseEntity<?> update(@Valid @RequestBody UpdateBrandReq brand, @PathVariable("id") int id){
-            BrandEntity brn = brandService.findById(id);
-            if (brn.getBrandName().equals(brand.getBrandName())){
-                throw new DuplicateRecordException("Dup rồi");
-            } else {
-                brandService.update(brand, brn.getId());
-            }
+    private ResponseEntity<?> update(@Valid @RequestBody UpdateBrandReq brand, @PathVariable("id") int id) {
+        BrandEntity brn = brandService.findById(id);
+        if (brn.getBrandName().equals(brand.getBrandName())) {
+            throw new DuplicateRecordException("Dup rồi");
+        } else {
+            brandService.update(brand, brn.getId());
+        }
         return new ResponseEntity<>("Update Success!", HttpStatus.OK);
     }
 
     @GetMapping("/get-all")
-    private ResponseEntity<?> getAll(){
+    private ResponseEntity<?> getAll() {
         List<BrandEntity> brands = brandService.findAll();
-        if (brands.isEmpty()){
+        if (brands.isEmpty()) {
             throw new NotFoundException("kkkk");
         }
         return new ResponseEntity<>(brands, HttpStatus.OK);
@@ -63,7 +63,7 @@ public class ManagementBrandController {
     @GetMapping("get-id/{id}")
     private ResponseEntity<?> getId(int id) {
         BrandEntity brand = brandService.findById(id);
-        if (brand.getId() == null){
+        if (brand.getId() == null) {
             throw new NotFoundException("0");
         }
         return new ResponseEntity<>(brand, HttpStatus.OK);

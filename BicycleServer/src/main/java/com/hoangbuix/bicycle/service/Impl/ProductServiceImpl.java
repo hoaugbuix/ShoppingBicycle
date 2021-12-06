@@ -18,7 +18,7 @@ public class ProductServiceImpl implements ProductService {
     public int save(ProductEntity product) {
         int id = 0;
         try {
-           id = productDAO.save(product);
+            id = productDAO.save(product);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -38,7 +38,7 @@ public class ProductServiceImpl implements ProductService {
     public void delete(int id) {
         try {
             productDAO.delete(id);
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -46,7 +46,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public List<ProductEntity> findAll() {
         List<ProductEntity> products = productDAO.findAll();
-        if (products.isEmpty()){
+        if (products.isEmpty()) {
             throw new NotFoundException("Kg");
         }
         return products;

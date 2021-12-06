@@ -2,8 +2,6 @@ package com.hoangbuix.bicycle.service.Impl;
 
 import com.hoangbuix.bicycle.dao.BrandDAO;
 import com.hoangbuix.bicycle.entity.BrandEntity;
-import com.hoangbuix.bicycle.exception.BadRequestException;
-import com.hoangbuix.bicycle.exception.DuplicateRecordException;
 import com.hoangbuix.bicycle.exception.NotFoundException;
 import com.hoangbuix.bicycle.model.request.create.CreateBrandReq;
 import com.hoangbuix.bicycle.model.request.update.UpdateBrandReq;
@@ -25,7 +23,7 @@ public class BrandServiceImpl implements BrandService {
     public int save(CreateBrandReq brand) {
         BrandEntity brands = brandDAO.findByBrandName(brand.getBrandName());
         BrandEntity brandNew = new BrandEntity();
-        if (brands == null){
+        if (brands == null) {
             brandNew.setBrandName(brand.getBrandName());
             brandNew.setThumbnail(brand.getThumbnail());
         }
@@ -34,26 +32,26 @@ public class BrandServiceImpl implements BrandService {
 
     @Override
     public void update(UpdateBrandReq brand, int id) {
-       try {
-           BrandEntity brands = brandDAO.findByBrandName(brand.getBrandName());
-           BrandEntity brandNew = new BrandEntity();
-           if (brands == null){
-               brandNew.setId(id);
-               brandNew.setBrandName(brand.getBrandName());
-               brandNew.setThumbnail(brand.getThumbnail());
-               brandNew.setActiveFlag(brand.getActiveFlag());
-               brandDAO.update(brandNew);
-           }
-       }catch (Exception e){
-           e.printStackTrace();
-           log.error(e.getMessage());
-       }
+        try {
+            BrandEntity brands = brandDAO.findByBrandName(brand.getBrandName());
+            BrandEntity brandNew = new BrandEntity();
+            if (brands == null) {
+                brandNew.setId(id);
+                brandNew.setBrandName(brand.getBrandName());
+                brandNew.setThumbnail(brand.getThumbnail());
+                brandNew.setActiveFlag(brand.getActiveFlag());
+                brandDAO.update(brandNew);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            log.error(e.getMessage());
+        }
     }
 
     @Override
     public void delete(int id) {
         BrandEntity brand = brandDAO.findById(id);
-        if (brand == null){
+        if (brand == null) {
             throw new NotFoundException("No find ID!");
         }
         brandDAO.delete(id);

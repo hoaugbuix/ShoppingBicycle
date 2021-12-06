@@ -27,7 +27,7 @@ public class ManagementProductController {
 
 
     @PostMapping()
-    private ResponseEntity<?> create(@Valid @RequestBody ProductEntity product){
+    private ResponseEntity<?> create(@Valid @RequestBody ProductEntity product) {
         int id = 0;
         try {
             CategoryEntity cate = categoryService.findById(product.getCategoyId());
@@ -35,7 +35,7 @@ public class ManagementProductController {
             if (id <= 0) {
                 throw new BadRequestException("");
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             log.error(e.getMessage());
         }
@@ -43,9 +43,9 @@ public class ManagementProductController {
     }
 
     @GetMapping("/get-all")
-    private ResponseEntity<?> getAll(){
+    private ResponseEntity<?> getAll() {
         List<ProductEntity> products = productService.findAll();
-        if (products.isEmpty()){
+        if (products.isEmpty()) {
             throw new NotFoundException("");
         }
         return new ResponseEntity<>(products, HttpStatus.OK);
@@ -54,14 +54,14 @@ public class ManagementProductController {
     @GetMapping("get-id/{id}")
     private ResponseEntity<?> getById(@PathVariable("id") int id) {
         ProductEntity product = productService.findById(id);
-        if (product == null){
+        if (product == null) {
             throw new NotFoundException("");
         }
         return new ResponseEntity<>(product, HttpStatus.OK);
     }
 
     @GetMapping("getProductName/{productName}")
-    private ResponseEntity<?> getByProductName( String productName){
+    private ResponseEntity<?> getByProductName(String productName) {
         ProductEntity product = productService.findByProductName(productName);
         if (product == null) {
             throw new NotFoundException("");

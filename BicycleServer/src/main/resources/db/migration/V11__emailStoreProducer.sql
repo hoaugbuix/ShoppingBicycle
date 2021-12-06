@@ -10,12 +10,11 @@ BEGIN
         newId int;
     SET
         max_sp_recursion_depth = 255;
-    if
-            (
+    if     (
                 select count(email.id)
                 from email
-                where email.seen = _seen) > 0 then
-        SET @message_text = CONCAT('Email \'', '', '\' already exists');
+                where email.content_email = _contentEmail) > 0 then
+        SET @message_text = CONCAT('Email \'', '_contentEmail', '\' already exists');
         SIGNAL
             SQLSTATE '45000' SET MESSAGE_TEXT = @message_text;
     else
@@ -68,7 +67,7 @@ begin
     where id = _id
       and (active_flag = 1
         or active_flag = 0)
-    order by name;
+    order by content_email;
 end$$
 DELIMITER ;
 

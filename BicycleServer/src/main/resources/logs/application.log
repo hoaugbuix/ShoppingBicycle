@@ -139,3 +139,535 @@
 2021-12-05 14:00:30 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
 2021-12-05 14:00:30 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
 2021-12-05 14:00:30 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:30:28 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:30:29 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:30:29 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:30:40 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:30:40 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:30:40 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:30:48 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:30:48 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:30:48 INFO  QueryConstant:25 - query property ====>  call brand_findByBrandName(?)
+2021-12-05 16:30:48 INFO  QueryConstant:25 - query property ====>  call brand_create(?, ?)
+2021-12-05 16:30:48 INFO  BaseDAOImpl:210 - insert =>>> [Brand Names, gg]
+2021-12-05 16:30:48 INFO  QueryConstant:25 - query property ====>  call brand_findById(?)
+2021-12-05 16:30:49 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:30:49 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:30:49 INFO  QueryConstant:25 - query property ====>  call brand_findByBrandName(?)
+2021-12-05 16:30:49 INFO  QueryConstant:25 - query property ====>  call brand_create(?, ?)
+2021-12-05 16:30:49 INFO  BaseDAOImpl:210 - insert =>>> [null, null]
+2021-12-05 16:30:49 ERROR BaseDAOImpl:238 - Column 'brand_name' cannot be null
+2021-12-05 16:30:51 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:30:51 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:30:51 INFO  QueryConstant:25 - query property ====>  call brand_findByBrandName(?)
+2021-12-05 16:30:51 INFO  QueryConstant:25 - query property ====>  call brand_create(?, ?)
+2021-12-05 16:30:51 INFO  BaseDAOImpl:210 - insert =>>> [null, null]
+2021-12-05 16:30:51 ERROR BaseDAOImpl:238 - Column 'brand_name' cannot be null
+2021-12-05 16:30:55 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:30:55 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:30:55 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:30:56 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:30:56 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:30:56 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:30:57 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:30:57 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:30:57 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:30:58 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:30:58 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:30:58 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:30:59 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:30:59 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:30:59 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:30:59 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:30:59 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:30:59 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:31:00 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:31:00 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:31:00 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:31:01 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:31:01 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:31:01 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:31:02 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:31:02 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:31:02 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:31:03 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:31:03 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:31:03 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:31:05 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:31:05 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:31:05 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 16:31:25 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 16:31:25 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 16:31:25 INFO  QueryConstant:25 - query property ====>  call brand_findAll()
+2021-12-05 17:07:50 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 17:07:50 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 17:07:50 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 17:07:50 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 17:07:51 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 17:07:51 INFO  BaseDAOImpl:210 - insert =>>> [meeting, meeting]
+2021-12-05 17:07:51 ERROR BaseDAOImpl:238 - Data truncation: Data too long for column '_seen' at row 1
+2021-12-05 19:39:51 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 19:39:51 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 19:39:52 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 19:39:52 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 19:39:52 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 19:39:52 INFO  BaseDAOImpl:210 - insert =>>> [meeting, meeting]
+2021-12-05 19:39:52 ERROR BaseDAOImpl:238 - Data truncation: Data too long for column '_seen' at row 1
+2021-12-05 19:55:28 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 19:55:28 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 19:55:28 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 19:55:32 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 19:55:35 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 19:55:37 INFO  BaseDAOImpl:210 - insert =>>> [meeting, meeting]
+2021-12-05 19:56:42 ERROR BaseDAOImpl:238 - Data truncation: Data too long for column '_seen' at row 1
+2021-12-05 20:02:06 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 20:02:06 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 20:02:06 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:02:06 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:02:06 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:02:06 INFO  BaseDAOImpl:210 - insert =>>> [meeting, 0]
+2021-12-05 20:02:06 INFO  QueryConstant:25 - query property ====>  call email_findById(?)
+2021-12-05 20:02:06 ERROR BaseDAOImpl:52 - Unknown column 'name' in 'order clause'
+2021-12-05 20:04:05 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 20:04:05 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 20:04:05 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:04:08 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:04:12 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:04:13 INFO  BaseDAOImpl:210 - insert =>>> [meeting, 0]
+2021-12-05 20:05:10 ERROR BaseDAOImpl:238 - Email '' already exists
+2021-12-05 20:06:59 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-05 20:06:59 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-05 20:07:06 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:07:06 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:07:06 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:07:06 INFO  BaseDAOImpl:210 - insert =>>> [meeting, 0]
+2021-12-05 20:07:06 INFO  QueryConstant:25 - query property ====>  call email_findById(?)
+2021-12-05 20:07:06 ERROR BaseDAOImpl:52 - Unknown column 'name' in 'order clause'
+2021-12-05 20:07:24 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:07:24 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:07:24 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:07:24 INFO  BaseDAOImpl:210 - insert =>>> [meeting, 0]
+2021-12-05 20:07:24 ERROR BaseDAOImpl:238 - Email '' already exists
+2021-12-05 20:09:39 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:09:42 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:09:47 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:09:50 INFO  BaseDAOImpl:210 - insert =>>> [meeting, 0]
+2021-12-05 20:12:09 ERROR BaseDAOImpl:238 - Email '' already exists
+2021-12-05 20:13:55 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:13:55 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:13:55 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:13:55 INFO  BaseDAOImpl:210 - insert =>>> [meeting, 0]
+2021-12-05 20:13:55 INFO  QueryConstant:25 - query property ====>  call email_findById(?)
+2021-12-05 20:13:55 ERROR BaseDAOImpl:52 - Unknown column 'name' in 'order clause'
+2021-12-05 20:16:44 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:16:44 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:16:44 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:16:44 INFO  BaseDAOImpl:210 - insert =>>> [meeting, 0]
+2021-12-05 20:16:44 ERROR BaseDAOImpl:238 - Email '_contentEmail' already exists
+2021-12-05 20:17:07 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:17:07 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:17:07 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:17:07 INFO  BaseDAOImpl:210 - insert =>>> [meetingg, 0]
+2021-12-05 20:17:07 INFO  QueryConstant:25 - query property ====>  call email_findById(?)
+2021-12-05 20:17:07 ERROR BaseDAOImpl:52 - Unknown column 'name' in 'order clause'
+2021-12-05 20:20:37 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:20:37 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:20:37 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:20:37 INFO  BaseDAOImpl:210 - insert =>>> [meetingg, 0]
+2021-12-05 20:20:37 ERROR BaseDAOImpl:238 - Email '_contentEmail' already exists
+2021-12-05 20:22:05 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:22:16 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:22:26 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:22:33 INFO  BaseDAOImpl:214 - insert =>>> [meetingg, 0]
+2021-12-05 20:22:56 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 20:23:09 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:23:10 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:23:11 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:23:11 INFO  BaseDAOImpl:214 - insert =>>> [meetinggg, 0]
+2021-12-05 20:23:11 INFO  QueryConstant:25 - query property ====>  call email_findById(?)
+2021-12-05 20:23:11 ERROR BaseDAOImpl:54 - Unknown column 'name' in 'order clause'
+2021-12-05 20:27:49 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:27:49 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:27:49 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:27:49 INFO  BaseDAOImpl:214 - insert =>>> [meetinggg, 0]
+2021-12-05 20:27:49 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 20:28:02 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:28:02 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:28:02 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:28:02 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 20:28:02 INFO  QueryConstant:25 - query property ====>  call email_findById(?)
+2021-12-05 20:28:02 ERROR BaseDAOImpl:54 - Unknown column 'name' in 'order clause'
+2021-12-05 20:31:36 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:31:36 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:31:36 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:31:36 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 20:31:36 INFO  QueryConstant:25 - query property ====>  call email_findById(?)
+2021-12-05 20:38:19 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:38:19 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:38:19 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:38:19 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 20:38:19 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 20:38:21 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:38:21 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:38:21 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:38:21 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 20:38:21 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 20:40:17 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:40:17 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:40:17 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:40:17 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 20:40:17 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 20:41:38 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:41:38 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:41:38 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 20:41:38 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 20:43:16 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:43:16 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:43:16 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 20:43:16 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 20:44:24 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:44:24 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:44:24 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 20:44:24 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 20:46:01 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:46:01 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:46:01 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 20:46:01 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 20:46:02 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:46:02 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:46:02 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 20:46:02 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 20:57:53 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 20:57:53 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 20:57:53 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 20:57:53 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 20:58:03 INFO  QueryConstant:25 - query property ====>  call brand_findByBrandName(?)
+2021-12-05 20:58:03 INFO  QueryConstant:25 - query property ====>  call brand_create(?, ?)
+2021-12-05 20:58:03 INFO  BaseDAOImpl:214 - insert =>>> [Brand Names, gg]
+2021-12-05 20:58:03 INFO  QueryConstant:25 - query property ====>  call brand_findById(?)
+2021-12-05 20:58:07 INFO  QueryConstant:25 - query property ====>  call brand_findByBrandName(?)
+2021-12-05 20:58:07 INFO  QueryConstant:25 - query property ====>  call brand_create(?, ?)
+2021-12-05 20:58:07 INFO  BaseDAOImpl:214 - insert =>>> [null, null]
+2021-12-05 20:58:07 ERROR BaseDAOImpl:242 - Column 'brand_name' cannot be null
+2021-12-05 20:58:09 INFO  QueryConstant:25 - query property ====>  call brand_findByBrandName(?)
+2021-12-05 20:58:09 INFO  QueryConstant:25 - query property ====>  call brand_create(?, ?)
+2021-12-05 20:58:09 INFO  BaseDAOImpl:214 - insert =>>> [null, null]
+2021-12-05 20:58:09 ERROR BaseDAOImpl:242 - Column 'brand_name' cannot be null
+2021-12-05 20:58:16 INFO  QueryConstant:25 - query property ====>  call brand_findById(?)
+2021-12-05 20:58:16 INFO  QueryConstant:25 - query property ====>  call brand_findByBrandName(?)
+2021-12-05 20:58:16 INFO  QueryConstant:25 - query property ====>  call brand_update(?, ?, ?, ?)
+2021-12-05 20:58:16 INFO  BaseDAOImpl:144 - ===> updating ... [1, Brandssssssssssssssssssss Namess, ggg, 1]
+2021-12-05 20:58:19 INFO  QueryConstant:25 - query property ====>  call brand_findById(?)
+2021-12-05 20:58:19 INFO  QueryConstant:25 - query property ====>  call brand_findById(?)
+2021-12-05 21:43:50 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 21:43:50 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 21:43:50 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 21:43:50 INFO  QueryConstant:25 - query property ====>  call email_findById(?)
+2021-12-05 21:44:08 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 21:44:08 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 21:44:08 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 21:44:08 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 21:51:53 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 21:51:53 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 21:51:53 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 21:51:54 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 21:51:55 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 21:51:55 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 21:51:55 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 21:51:55 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 21:51:56 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 21:51:56 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 21:51:56 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 21:51:56 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 21:51:57 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 21:51:57 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 21:51:57 INFO  BaseDAOImpl:214 - insert =>>> [meetingggg, 0]
+2021-12-05 21:51:57 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 22:16:04 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 22:16:04 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 22:16:04 INFO  BaseDAOImpl:214 - insert =>>> [meetinggggggg, 0]
+2021-12-05 22:16:04 INFO  QueryConstant:25 - query property ====>  call email_findById(?)
+2021-12-05 22:16:06 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 22:16:06 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 22:16:06 INFO  BaseDAOImpl:214 - insert =>>> [meetinggggggg, 0]
+2021-12-05 22:16:06 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 22:16:07 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 22:16:07 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 22:16:07 INFO  BaseDAOImpl:214 - insert =>>> [meetinggggggg, 0]
+2021-12-05 22:16:07 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 22:16:09 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 22:16:09 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 22:16:09 INFO  BaseDAOImpl:214 - insert =>>> [meetinggggggg, 0]
+2021-12-05 22:16:09 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 22:31:47 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 22:31:47 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 22:31:47 INFO  BaseDAOImpl:214 - insert =>>> [meetinggggggg, 0]
+2021-12-05 22:31:47 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 22:35:59 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 22:35:59 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 22:35:59 INFO  BaseDAOImpl:214 - insert =>>> [meetinggggggg, 0]
+2021-12-05 22:35:59 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-05 22:56:12 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 22:56:12 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 22:56:12 INFO  BaseDAOImpl:214 - insert =>>> [g, 0]
+2021-12-05 22:56:12 INFO  QueryConstant:25 - query property ====>  call email_findById(?)
+2021-12-05 22:56:14 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-05 22:56:14 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-05 22:56:14 INFO  BaseDAOImpl:214 - insert =>>> [g, 0]
+2021-12-05 22:56:14 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-06 13:53:04 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-06 13:53:04 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-06 13:53:04 INFO  BaseDAOImpl:214 - insert =>>> [g, 0]
+2021-12-06 13:53:04 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-06 13:55:25 INFO  QueryConstant:25 - query property ====>  call email_findBySeen(?)
+2021-12-06 13:55:25 INFO  QueryConstant:25 - query property ====>  call email_create(?, ?)
+2021-12-06 13:55:25 INFO  BaseDAOImpl:214 - insert =>>> [g, 0]
+2021-12-06 13:55:25 ERROR BaseDAOImpl:242 - Email '_contentEmail' already exists
+2021-12-06 15:15:34 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 15:15:34 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2021-12-06 15:15:35 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-12-06 15:15:35 INFO  BaseDAOImpl:214 - insert =>>> [Hoang, Bui Van, dasq1s, hoangbui, $2a$12$d1hiH81lLIMX4dpEx22kgesWjtZmY7KOE9O1lnyL6h45iIyUxa3sm, buihoang9b8@gmail.com]
+2021-12-06 15:15:35 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 15:15:35 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2021-12-06 15:15:35 INFO  BaseDAOImpl:214 - insert =>>> [1, 3]
+2021-12-06 15:15:35 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 15:15:38 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 15:15:38 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 15:15:38 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 15:15:38 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 15:16:48 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 15:16:48 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 15:16:48 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 15:16:48 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 15:17:44 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 15:17:44 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 15:17:44 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 15:17:44 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 15:18:55 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 15:18:55 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 15:18:56 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 15:18:56 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 15:21:20 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 15:21:20 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 15:21:21 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 15:21:21 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 15:22:12 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 15:22:13 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 15:22:13 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 15:22:13 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:01:14 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:01:15 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:01:20 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:01:20 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2021-12-06 16:01:21 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-12-06 16:01:21 INFO  BaseDAOImpl:214 - insert =>>> [Hoang, Bui Van, dasq1s, hoangbui, $2a$12$eRAYN49gl95NOkhqLt1YiumLw1UfyMgRDXMslN/QJZvTQdyDxEu6O, buihoang9b8@gmail.com]
+2021-12-06 16:01:21 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 16:01:21 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2021-12-06 16:01:21 INFO  BaseDAOImpl:214 - insert =>>> [1, 3]
+2021-12-06 16:01:21 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 16:01:25 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:01:25 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:01:26 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:01:26 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:01:30 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:01:30 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:01:30 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:01:30 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:03:50 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:03:50 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2021-12-06 16:03:50 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-12-06 16:03:50 INFO  BaseDAOImpl:214 - insert =>>> [Hoang, Bui Van, dasq1s, hoangbui, $2a$12$JPRHJtbSTxVhwbsALeCEmui0HRvDERkAz3B9UBPjPrQG0OUUai88W, buihoang9b8@gmail.com]
+2021-12-06 16:03:50 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 16:03:50 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2021-12-06 16:03:50 INFO  BaseDAOImpl:214 - insert =>>> [1, 3]
+2021-12-06 16:03:50 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 16:03:56 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:03:56 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:03:56 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:03:56 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:04:05 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:04:05 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:04:12 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:04:12 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:04:17 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:04:17 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:04:17 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:04:17 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:06:33 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:06:33 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:06:35 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:06:35 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2021-12-06 16:06:36 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-12-06 16:06:36 INFO  BaseDAOImpl:214 - insert =>>> [Hoang, Bui Van, dasq1s, hoangbui, $2a$12$DqN4lgizjqIyhkWdZihBTeoEKxhnFV5fGDGFT8ApGU8NAeh.bL286, buihoang9b8@gmail.com]
+2021-12-06 16:06:36 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 16:06:36 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2021-12-06 16:06:36 INFO  BaseDAOImpl:214 - insert =>>> [1, 3]
+2021-12-06 16:06:36 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 16:06:39 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:06:39 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:06:39 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:06:39 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:06:43 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:06:43 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:06:43 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:06:43 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:07:31 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:07:31 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:07:31 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:07:31 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:10:28 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:10:28 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:10:28 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:10:28 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:12:32 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:12:32 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:12:33 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:12:33 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:18:42 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:18:42 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:18:42 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:18:42 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:19:13 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:19:13 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:19:14 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:19:14 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:19:50 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:19:50 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:19:53 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:19:53 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:22:44 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:22:44 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:22:50 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:22:50 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:24:59 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:24:59 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:24:59 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:24:59 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:26:22 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:26:22 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:26:22 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:26:22 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:26:23 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:26:23 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:26:23 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:26:23 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:48:09 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:48:09 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:48:21 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:48:21 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2021-12-06 16:48:21 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-12-06 16:48:21 INFO  BaseDAOImpl:214 - insert =>>> [Hoang, Bui Van, dasq1s, hoangbui, $2a$12$hvUTVaoJ7IkDhU1jzi5mKOv.9oIE4OpMBwqaTO1nmm77bt3k.RXXm, buihoang9b8@gmail.com]
+2021-12-06 16:48:21 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 16:48:21 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2021-12-06 16:48:21 INFO  BaseDAOImpl:214 - insert =>>> [1, 3]
+2021-12-06 16:48:21 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 16:48:24 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:48:24 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:48:24 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:48:24 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:48:27 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:48:27 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:48:28 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:48:28 ERROR BaseDAOImpl:54 - Unknown column 'title' in 'where clause'
+2021-12-06 16:54:18 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:54:18 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2021-12-06 16:54:18 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-12-06 16:54:18 INFO  BaseDAOImpl:214 - insert =>>> [Hoang, Bui Van, dasq1s, hoangbui, $2a$12$QgiumwBWXltnkwIZyRCJou1L4DIWGWRaG7PoiGxgdqTsuL3RWYnPS, buihoang9b8@gmail.com]
+2021-12-06 16:54:18 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 16:54:18 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2021-12-06 16:54:18 INFO  BaseDAOImpl:214 - insert =>>> [1, 3]
+2021-12-06 16:54:18 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 16:54:22 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:54:22 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:54:22 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:54:22 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:54:28 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:54:28 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:54:28 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:54:28 INFO  QueryConstant:25 - query property ====>  call post_create(?, ?, ?, ?, ?, ?)
+2021-12-06 16:54:28 INFO  BaseDAOImpl:214 - insert =>>> [xxx, x, x, x.png, this is x, 1]
+2021-12-06 16:54:28 ERROR BaseDAOImpl:242 - Incorrect number of arguments for PROCEDURE shopping_bicycle.post_create; expected 7, got 6
+2021-12-06 16:56:21 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:56:21 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:56:21 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:56:21 INFO  QueryConstant:25 - query property ====>  call post_create(?, ?, ?, ?, ?, ?, ?)
+2021-12-06 16:56:21 INFO  BaseDAOImpl:214 - insert =>>> [xxx, x, x, x.png, this is x, 1, 1]
+2021-12-06 16:56:21 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 16:58:19 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:58:19 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:58:32 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:58:32 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:58:32 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 16:58:32 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:58:32 INFO  QueryConstant:25 - query property ====>  call post_update(?, ?, ?, ?, ?, ?, ?, ?)
+2021-12-06 16:58:32 INFO  BaseDAOImpl:144 - ===> updating ... [xxx, xxx, xxx, xxx.png, this is xxx, 1, 0]
+2021-12-06 16:58:32 ERROR BaseDAOImpl:163 - No value specified for parameter 8
+2021-12-06 16:59:13 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 16:59:13 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 16:59:13 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 16:59:13 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 16:59:13 INFO  QueryConstant:25 - query property ====>  call post_update(?, ?, ?, ?, ?, ?, ?, ?)
+2021-12-06 16:59:13 INFO  BaseDAOImpl:144 - ===> updating ... [xxx, xxx, xxx, xxx.png, this is xxx, 1, 1]
+2021-12-06 16:59:13 ERROR BaseDAOImpl:163 - No value specified for parameter 8
+2021-12-06 17:06:16 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 17:06:16 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 17:06:30 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 17:06:30 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2021-12-06 17:06:31 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-12-06 17:06:31 INFO  BaseDAOImpl:214 - insert =>>> [Hoang, Bui Van, dasq1s, hoangbui, $2a$12$ED1ypETDO865gCgGvFp2jegtpVXq0mG3BTAnqLALtrhEPn1pE22Ua, buihoang9b8@gmail.com]
+2021-12-06 17:06:31 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 17:06:31 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2021-12-06 17:06:31 INFO  BaseDAOImpl:214 - insert =>>> [1, 3]
+2021-12-06 17:06:31 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 17:06:33 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 17:06:33 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 17:06:34 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 17:06:34 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 17:06:37 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 17:06:37 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 17:06:37 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 17:06:37 INFO  QueryConstant:25 - query property ====>  call post_create(?, ?, ?, ?, ?, ?, ?)
+2021-12-06 17:06:37 INFO  BaseDAOImpl:214 - insert =>>> [xxx, x, x, x.png, this is x, 1, 1]
+2021-12-06 17:06:37 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 17:06:39 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 17:06:39 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 17:06:39 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 17:06:40 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 17:06:40 INFO  QueryConstant:25 - query property ====>  call post_update(?, ?, ?, ?, ?, ?, ?, ?)
+2021-12-06 17:06:40 INFO  BaseDAOImpl:144 - ===> updating ... [xxx, xxx, xxx, xxx.png, this is xxx, 1, 1]
+2021-12-06 17:06:40 ERROR BaseDAOImpl:163 - No value specified for parameter 8
+2021-12-06 17:10:04 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 17:10:05 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 17:10:05 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 17:10:05 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 17:10:05 INFO  QueryConstant:25 - query property ====>  call post_update(?, ?, ?, ?, ?, ?, ?)
+2021-12-06 17:10:05 INFO  BaseDAOImpl:144 - ===> updating ... [xxx, xxx, xxx, xxx.png, this is xxx, 1, 1]
+2021-12-06 17:10:27 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 17:10:28 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 17:10:28 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 18:30:29 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 18:30:29 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 18:30:29 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 19:39:56 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 19:39:56 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 19:39:56 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 19:55:11 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 19:55:11 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 19:55:11 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 19:57:40 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 19:57:40 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 19:57:50 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 19:57:50 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 19:57:50 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 19:58:07 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 19:58:07 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 19:58:07 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 19:58:15 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 19:58:15 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 19:58:15 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 19:58:24 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 19:58:24 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 19:58:24 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 19:58:31 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 19:58:31 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 19:58:31 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)

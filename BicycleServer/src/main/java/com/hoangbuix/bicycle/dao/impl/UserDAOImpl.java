@@ -21,14 +21,14 @@ public class UserDAOImpl extends BaseDAOImpl<UserEntity> implements UserDAO<User
     @Override
     public int save(UserEntity user) {
         return insert(QueryConstant.callQuery(USER, CREATE, user.getFirstName(), user.getLastName(),
-                        user.getAvatar(), user.getUsername(), user.getPassword(), user.getEmail()), user.getFirstName(), user.getLastName(),
+                user.getAvatar(), user.getUsername(), user.getPassword(), user.getEmail()), user.getFirstName(), user.getLastName(),
                 user.getAvatar(), user.getUsername(), user.getPassword(), user.getEmail());
     }
 
     @Override
     public void update(UserEntity user) {
         update(QueryConstant.callQuery(USER, UPDATE, user.getFirstName(), user.getLastName(),
-                        user.getAvatar(), user.getUsername(), user.getPassword(), user.getEmail()), user.getFirstName(), user.getLastName(),
+                user.getAvatar(), user.getUsername(), user.getPassword(), user.getEmail()), user.getFirstName(), user.getLastName(),
                 user.getAvatar(), user.getUsername(), user.getPassword(), user.getEmail());
     }
 

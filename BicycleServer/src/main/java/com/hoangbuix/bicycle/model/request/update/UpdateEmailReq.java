@@ -7,7 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class UpdateBrandReq {
+public class UpdateEmailReq {
     //    @NotNull(message = "Brand Name trống")
 //    @NotEmpty(message = "Brand Name trống")
 //    @Email(message = "Brand Name không đúng định dạng")
@@ -16,7 +16,7 @@ public class UpdateBrandReq {
 //            notes = "Brand Name trống",
 //            required = true
 //    )
-    private String brandName;
+    private String contentEmail;
 
     //    @NotNull(message = "Thumbnail")
 //    @NotEmpty(message = "Thumbnail trống")
@@ -25,7 +25,7 @@ public class UpdateBrandReq {
 //            notes = "Thumbnail trống",
 //            required = true
 //    )
-    private String thumbnail;
+    private long seen;
 
     //    @NotNull(message = "Active Flag")
 //    @NotEmpty(message = "Active Flag trống")

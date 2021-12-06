@@ -2,9 +2,7 @@ package com.hoangbuix.bicycle.dao.impl;
 
 import com.hoangbuix.bicycle.dao.ImageDAO;
 import com.hoangbuix.bicycle.entity.ImageEntity;
-import com.hoangbuix.bicycle.entity.UserEntity;
 import com.hoangbuix.bicycle.model.mapper.ImageMapper;
-import com.hoangbuix.bicycle.model.mapper.UserMapper;
 import com.hoangbuix.bicycle.util.QueryConstant;
 import com.hoangbuix.bicycle.util.SqlConstant;
 import org.apache.log4j.Logger;
@@ -26,7 +24,7 @@ public class ImageDAOImpl extends BaseDAOImpl<ImageEntity> implements ImageDAO<I
     public int save(ImageEntity image) {
         log.info("ImageDAOImpl save" + image.toString());
         return insert(QueryConstant.callQuery(IMAGE, SqlConstant.CREATE, image.getLink(), image.getFileName(), image.getSize(),
-                image.getFileType(), image.getPostId(), image.getUploadBy()), image.getLink(), image.getFileName(),image.getFileType(),
+                image.getFileType(), image.getPostId(), image.getUploadBy()), image.getLink(), image.getFileName(), image.getFileType(),
                 image.getSize(), image.getPostId(), image.getUploadBy());
     }
 

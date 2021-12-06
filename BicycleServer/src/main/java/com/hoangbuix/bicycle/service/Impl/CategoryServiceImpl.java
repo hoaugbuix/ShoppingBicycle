@@ -22,8 +22,8 @@ public class CategoryServiceImpl implements CategoryService {
         try {
             id = categoryDAO.save(cate);
         } catch (Exception e) {
-          e.printStackTrace();
-          log.error(e.getMessage());
+            e.printStackTrace();
+            log.error(e.getMessage());
         }
         return id;
     }
@@ -32,7 +32,7 @@ public class CategoryServiceImpl implements CategoryService {
     public void update(CategoryEntity cate) {
         try {
             categoryDAO.update(cate);
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             log.error(e.getMessage());
         }

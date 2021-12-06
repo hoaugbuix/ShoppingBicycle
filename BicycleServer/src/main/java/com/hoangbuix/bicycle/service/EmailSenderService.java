@@ -21,16 +21,16 @@ public class EmailSenderService {
                                        String subject,
                                        String attachment) throws MessagingException {
 
-        MimeMessage mimeMessage=javaMailSender.createMimeMessage();
-        MimeMessageHelper mimeMessageHelper=new MimeMessageHelper(mimeMessage,true);
+        MimeMessage mimeMessage = javaMailSender.createMimeMessage();
+        MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true);
         mimeMessageHelper.setFrom("buihoang9b8@gmail.com");
         mimeMessageHelper.setTo(toEmail);
         mimeMessageHelper.setText(body);
         mimeMessageHelper.setSubject(subject);
 
-        FileSystemResource fileSystemResource=
+        FileSystemResource fileSystemResource =
                 new FileSystemResource(new File(attachment));
-        mimeMessageHelper.addAttachment(fileSystemResource.getFilename(),fileSystemResource);
+        mimeMessageHelper.addAttachment(fileSystemResource.getFilename(), fileSystemResource);
         javaMailSender.send(mimeMessage);
         System.out.println("Mail with attachment sent successfully..");
 

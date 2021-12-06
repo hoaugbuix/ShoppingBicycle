@@ -7,7 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class CreateBrandReq {
+public class CreatePostReq {
     //    @NotNull(message = "Brand Name trống")
 //    @NotEmpty(message = "Brand Name trống")
 //    @Email(message = "Brand Name không đúng định dạng")
@@ -16,14 +16,14 @@ public class CreateBrandReq {
 //            notes = "Brand Name trống",
 //            required = true
 //    )
-    private String brandName;
+    private String title;
 
-    //    @NotNull(message = "Thumbnail")
-//    @NotEmpty(message = "Thumbnail trống")
-//    @ApiModelProperty(
-//            example = "Thumbnail",
-//            notes = "Thumbnail trống",
-//            required = true
-//    )
+    private String content;
+
+    private String slug;
+
+    private String description;
+
     private String thumbnail;
+
 }
