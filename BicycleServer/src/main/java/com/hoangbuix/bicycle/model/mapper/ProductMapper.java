@@ -13,7 +13,7 @@ public class ProductMapper implements RowMapper<ProductEntity> {
             ProductEntity product = new ProductEntity();
             product.setId(resultSet.getInt("id"));
             return product;
-        }catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
             return null;
         }

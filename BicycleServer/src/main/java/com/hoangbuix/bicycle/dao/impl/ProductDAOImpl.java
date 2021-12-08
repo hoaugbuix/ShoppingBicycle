@@ -1,6 +1,6 @@
 package com.hoangbuix.bicycle.dao.impl;
 
-import com.hoangbuix.bicycle.dao.ProductionDAO;
+import com.hoangbuix.bicycle.dao.ProductDAO;
 import com.hoangbuix.bicycle.entity.ProductEntity;
 import com.hoangbuix.bicycle.model.mapper.ProductMapper;
 import com.hoangbuix.bicycle.util.QueryConstant;
@@ -12,7 +12,7 @@ import java.util.List;
 
 @Component
 @Transactional(rollbackFor = Exception.class)
-public class ProductDAOImpl extends BaseDAOImpl<ProductEntity> implements ProductionDAO<ProductEntity> {
+public class ProductDAOImpl extends BaseDAOImpl<ProductEntity> implements ProductDAO<ProductEntity> {
     private final String PRODUCT = "product";
 
     @Override
@@ -47,6 +47,12 @@ public class ProductDAOImpl extends BaseDAOImpl<ProductEntity> implements Produc
     @Override
     public ProductEntity findById(int id) {
         List<ProductEntity> product = query(QueryConstant.callQuery(PRODUCT, SqlConstant.FIND_BY_ID, id), new ProductMapper(), id);
+        return product.isEmpty() ? null : product.get(0);
+    }
+
+    @Override
+    public ProductEntity findByProductName(String productName) {
+        List<ProductEntity> product = query(QueryConstant.callQuery(PRODUCT, SqlConstant.FIND_BY_ID, productName), new ProductMapper(), productName);
         return product.isEmpty() ? null : product.get(0);
     }
 }

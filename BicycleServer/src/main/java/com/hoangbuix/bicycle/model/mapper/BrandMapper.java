@@ -1,7 +1,6 @@
 package com.hoangbuix.bicycle.model.mapper;
 
 import com.hoangbuix.bicycle.entity.BrandEntity;
-import com.hoangbuix.bicycle.entity.RoleEntity;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

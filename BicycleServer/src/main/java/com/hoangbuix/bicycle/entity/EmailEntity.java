@@ -1,11 +1,15 @@
 package com.hoangbuix.bicycle.entity;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Entity(name = "email")
 @Table(name = "email")
@@ -14,5 +18,5 @@ public class EmailEntity extends BaseEntity {
     private String contentEmail;
 
     @Column(name = "seen")
-    private boolean seen;
+    private long seen;
 }

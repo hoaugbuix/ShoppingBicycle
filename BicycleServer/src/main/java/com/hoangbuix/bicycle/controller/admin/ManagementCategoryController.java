@@ -25,17 +25,17 @@ public class ManagementCategoryController {
     public ResponseEntity<?> getAll() {
         log.info("get All");
         List<CategoryEntity> categories = categoryService.findAll();
-        if (categories.isEmpty()){
+        if (categories.isEmpty()) {
             throw new NotFoundException("Không tồn tại thể loại sản phẩm nào");
         }
         return new ResponseEntity<>(categories, HttpStatus.OK);
     }
 
     @GetMapping("/get-by-id/{id}")
-    private ResponseEntity<?> findById(@PathVariable("id") int id){
+    private ResponseEntity<?> findById(@PathVariable("id") int id) {
         log.info("find by id" + id);
         CategoryEntity cate = categoryService.findById(id);
-        if (cate.getId() == 0){
+        if (cate.getId() == 0) {
             throw new NotFoundException("Category không tồn tại!");
         }
         return new ResponseEntity<>(cate, HttpStatus.OK);
@@ -44,7 +44,7 @@ public class ManagementCategoryController {
     @PostMapping("/create-category")
     private ResponseEntity<?> createCategory(@Valid @RequestBody CategoryEntity cate) {
         int id = categoryService.save(cate);
-        if(id == 0) {
+        if (id == 0) {
             throw new BadRequestException("Tạo mới category thất bại!");
         }
         return new ResponseEntity<>(categoryService.findById(id), HttpStatus.OK);
@@ -54,7 +54,7 @@ public class ManagementCategoryController {
     private ResponseEntity<?> update(@Valid @RequestBody CategoryEntity cate) {
         try {
             categoryService.update(cate);
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             log.error(e.getMessage());
         }
@@ -62,11 +62,11 @@ public class ManagementCategoryController {
     }
 
     @PostMapping("delete-category/{id}")
-    private ResponseEntity<?> delete(@PathVariable("id") int id){
+    private ResponseEntity<?> delete(@PathVariable("id") int id) {
         log.info("delete " + id);
         try {
             categoryService.delete(id);
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             log.error(e.getMessage());
         }

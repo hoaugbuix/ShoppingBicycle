@@ -12,9 +12,9 @@ BEGIN
         max_sp_recursion_depth = 255;
     if
             (
-                select count(barnd.id)
+                select count(brand.id)
                 from brand
-                where brand._brandName) > 0 then
+                where brand.brand_name = _brandName) > 0 then
         SET @message_text = CONCAT('Image \'', _brandName, '\' already exists');
         SIGNAL
             SQLSTATE '45000' SET MESSAGE_TEXT = @message_text;
@@ -32,14 +32,19 @@ DELIMITER ;
 drop procedure if EXISTS brand_update;
 DELIMITER $$
 CREATE PROCEDURE brand_update(
+    in _id INTEGER,
     in _brandName VARCHAR(255),
-    in _thumbnail VARCHAR(255)
+    in _thumbnail VARCHAR(255),
+    in _active INTEGER
 )
 body:
 begin
     update brand
-    set brand_name = _brandName,
-        thumbnail =  _thumbnail;
+    set id = _id,
+        brand_name = _brandName,
+        thumbnail =  _thumbnail,
+        active_flag = _active
+    WHERE id = _id;
 END$$
 DELIMITER ;
 --
@@ -49,7 +54,7 @@ DELIMITER $$
 CREATE PROCEDURE brand_findAll()
 begin
     select *
-    from image
+    from brand
     where active_flag = 1
        or active_flag = 0;
 end$$
@@ -69,9 +74,9 @@ begin
 end$$
 DELIMITER ;
 
-drop procedure if EXISTS brand_findByLink;
+drop procedure if EXISTS brand_findByBrandName;
 DELIMITER $$
-CREATE PROCEDURE brand_findByLink(in _brandName varchar(100))
+CREATE PROCEDURE brand_findByBrandName(in _brandName varchar(100))
 begin
     select *
     from brand

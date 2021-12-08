@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.util.List;
 
-import static com.hoangbuix.bicycle.util.Constant.*;
+import static com.hoangbuix.bicycle.util.Constant.MAX_AGE_COOKIE;
 
 @RestController
 @RequestMapping("/api/v1/user")

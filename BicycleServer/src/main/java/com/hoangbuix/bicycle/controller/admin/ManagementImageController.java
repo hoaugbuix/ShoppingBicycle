@@ -9,10 +9,8 @@ import com.hoangbuix.bicycle.security.CustomUserDetails;
 import com.hoangbuix.bicycle.service.ImageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
-import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -26,7 +24,6 @@ import java.net.MalformedURLException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.sql.Timestamp;
 
 @RestController
 @RequestMapping("/image")
@@ -46,7 +43,8 @@ public class ManagementImageController {
         }
 
         String originalFilename = file.getOriginalFilename();
-        String extension = originalFilename.substring(originalFilename.lastIndexOf(".") + 1);;
+        String extension = originalFilename.substring(originalFilename.lastIndexOf(".") + 1);
+        ;
         if (originalFilename != null && originalFilename.length() > 0) {
             if (!extension.equals("png") && !extension.equals("jpg") && !extension.equals("gif") && !extension.equals("svg") && !extension.equals("jpeg")) {
                 throw new BadRequestException("Không hỗ trợ định dạng file này");
@@ -98,16 +96,16 @@ public class ManagementImageController {
 
 
     @GetMapping("/get-image/{filename:.+}")
-    public ResponseEntity<ByteArrayResource> getImag(@PathVariable("filename") String filename){
-        if(!filename.equals("") || filename != null){
+    public ResponseEntity<ByteArrayResource> getImag(@PathVariable("filename") String filename) {
+        if (!filename.equals("") || filename != null) {
             try {
-                Path fileName = Paths.get(UPLOAD_DIR , filename);
+                Path fileName = Paths.get(UPLOAD_DIR, filename);
                 byte[] buffer = Files.readAllBytes(fileName);
                 ByteArrayResource byteArrayResource = new ByteArrayResource(buffer);
                 return ResponseEntity.ok()
                         .contentLength(buffer.length)
                         .contentType(MediaType.parseMediaType("image/png")).body(byteArrayResource);
-            }catch (Exception e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
