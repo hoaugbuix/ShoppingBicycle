@@ -33,7 +33,7 @@ public class PostDAOImpl extends BaseDAOImpl<PostEntity> implements PostDAO<Post
 
     @Override
     public void delete(int id) {
-        delete(QueryConstant.callQuery(POST, SqlConstant.DELETE, id), id );
+        delete(QueryConstant.callQuery(POST, SqlConstant.DELETE, id), id);
     }
 
     @Override

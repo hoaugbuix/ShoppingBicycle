@@ -1,7 +1,6 @@
 package com.hoangbuix.bicycle.controller.admin;
 
 import com.hoangbuix.bicycle.entity.EmailEntity;
-import com.hoangbuix.bicycle.exception.BadRequestException;
 import com.hoangbuix.bicycle.exception.DuplicateRecordException;
 import com.hoangbuix.bicycle.exception.NotFoundException;
 import com.hoangbuix.bicycle.model.request.create.CreateEmailReq;
@@ -24,10 +23,10 @@ public class ManagementEmailController {
     @PostMapping("create-email")
     private ResponseEntity<?> create(@Valid @RequestBody CreateEmailReq req) {
         int id = 0;
-            EmailEntity ems = emailService.findByContentEmail(req.getContentEmail());
-            if (ems == null) {
-                id = emailService.save(req);
-            }
+        EmailEntity ems = emailService.findByContentEmail(req.getContentEmail());
+        if (ems == null) {
+            id = emailService.save(req);
+        }
         EmailEntity em = emailService.findById(id);
         return new ResponseEntity<>(em, HttpStatus.OK);
     }

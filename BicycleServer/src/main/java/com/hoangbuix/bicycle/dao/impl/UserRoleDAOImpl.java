@@ -36,7 +36,7 @@ public class UserRoleDAOImpl extends BaseDAOImpl<UserRoleEntity> implements User
 
     @Override
     public List<UserRoleEntity> findAll() {
-        return query(QueryConstant.callQuery(USER_ROLE, SqlConstant.FIND_ALL, null), new UserRoleMapper());
+        return query(QueryConstant.callQuery(USER_ROLE, SqlConstant.FIND_ALL, ""), new UserRoleMapper());
     }
 
     @Override

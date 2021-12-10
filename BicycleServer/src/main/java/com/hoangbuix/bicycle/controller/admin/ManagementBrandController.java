@@ -27,12 +27,12 @@ public class ManagementBrandController {
         BrandEntity brnd = null;
         try {
             BrandEntity brn = brandService.findByBrandName(brand.getBrandName());
-            if (brn.getBrandName().equals(brand.getBrandName())){
-                throw new BadRequestException("Đã tồn tại");
-            } else  {
+            if (brn != null) {
+                throw new DuplicateRecordException("Đã tồn tại");
+            } else {
                 id = brandService.save(brand);
+                brnd = brandService.findById(id);
             }
-            brnd = brandService.findById(id);
         } catch (Exception e) {
 //            e.printStackTrace();
             throw new BadRequestException("lỗi crete");

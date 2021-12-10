@@ -1,6 +1,5 @@
 package com.hoangbuix.bicycle.model.mapper;
 
-import com.hoangbuix.bicycle.entity.BrandEntity;
 import com.hoangbuix.bicycle.entity.PostEntity;
 
 import java.sql.ResultSet;

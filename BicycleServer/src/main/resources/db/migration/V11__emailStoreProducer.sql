@@ -1,19 +1,17 @@
 drop procedure if EXISTS email_create;
 DELIMITER $$
-CREATE PROCEDURE email_create(
-    in _contentEmail VARCHAR(255),
-    in _seen BIT
-)
+CREATE PROCEDURE email_create(in _contentEmail VARCHAR(255),
+                              in _seen BIT)
 body:
 BEGIN
     declare
         newId int;
     SET
         max_sp_recursion_depth = 255;
-    if     (
-                select count(email.id)
-                from email
-                where email.content_email = _contentEmail) > 0 then
+    if (
+           select count(email.id)
+           from email
+           where email.content_email = _contentEmail) > 0 then
         SET @message_text = CONCAT('Email \'', '_contentEmail', '\' already exists');
         SIGNAL
             SQLSTATE '45000' SET MESSAGE_TEXT = @message_text;
@@ -30,18 +28,16 @@ DELIMITER ;
 -- update
 drop procedure if EXISTS email_update;
 DELIMITER $$
-CREATE PROCEDURE email_update(
-    in _contentEmail VARCHAR(255),
-    in _seen BIT,
-    in _active_flag INTEGER
-)
+CREATE PROCEDURE email_update(in _contentEmail VARCHAR(255),
+                              in _seen BIT,
+                              in _active_flag INTEGER)
 body:
 begin
     update email
     set content_email = _contentEmail,
-        seen         = _seen,
-        active_flag  = _active_flag,
-        updated_date = now();
+        seen          = _seen,
+        active_flag   = _active_flag,
+        updated_date  = now();
 END$$
 DELIMITER ;
 --
@@ -86,7 +82,7 @@ DELIMITER ;
 
 drop procedure if EXISTS email_findBySeen;
 DELIMITER $$
-CREATE PROCEDURE email_findBySeen(in _seen BIT )
+CREATE PROCEDURE email_findBySeen(in _seen BIT)
 begin
     select 1
     from email

@@ -138,11 +138,12 @@ CREATE TABLE product
     product_code  VARCHAR(100)   NOT NULL,
     description   VARCHAR(255)   NOT NULL,
     slug          VARCHAR(255)   NOT NULL,
-    brand_id      INTEGER        NOT NULL,
     price         DECIMAL(50, 2) NOT NULL,
     product_image VARCHAR(255)   NOT NULL,
-    total_sold    INT            NOT NULL,
-    category_id   INT            NOT NULL,
+    total_sold    INTEGER            NOT NULL,
+	brand_id      INTEGER        NOT NULL,
+    category_id   INTEGER            NOT NULL,
+    product_size  INTEGER            NOT NULL,
     active_flag   INTEGER        NOT NULL DEFAULT 1,
     created_date  TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_date  TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -197,17 +198,16 @@ CREATE TABLE orders
     note             VARCHAR(255)   NOT NULL,
     product_price    DECIMAL(10, 2) NOT NULL,
     promotion_id     INTEGER        NOT NULL,
-    promotion        json                    DEFAULT NULL,
+    product_id       INTEGER                 DEFAULT NULL,
+    product_size     INTEGER                     DEFAULT NULL,
     receiver_address varchar(255)            DEFAULT NULL,
     receiver_name    varchar(255)            DEFAULT NULL,
     receiver_phone   varchar(255)            DEFAULT NULL,
-    size             int                     DEFAULT NULL,
-    status           int                     DEFAULT NULL,
+    status           INTEGER                     DEFAULT NULL,
     total_price      bigint                  DEFAULT NULL,
     buyer            bigint                  DEFAULT NULL,
     created_by       bigint                  DEFAULT NULL,
     modified_by      bigint                  DEFAULT NULL,
-    product_id       INTEGER                 DEFAULT NULL,
     active_flag      INTEGER        NOT NULL DEFAULT 1,
     created_date     TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_date     TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -238,9 +238,24 @@ CREATE TABLE configuration
     PRIMARY KEY (id)
 );
 
-ALTER TABLE user_role
-    ADD CONSTRAINT fk_userRole_user FOREIGN KEY (user_id) REFERENCES user (id);
-ALTER TABLE user_role
-    ADD CONSTRAINT fk_userRole_role FOREIGN KEY (role_id) REFERENCES role (id);
+ALTER TABLE user_role ADD CONSTRAINT fk_userRole_user FOREIGN KEY (user_id) REFERENCES user (id);
+ALTER TABLE user_role ADD CONSTRAINT fk_userRole_role FOREIGN KEY (role_id) REFERENCES role (id);
 
+ALTER TABLE product_category ADD CONSTRAINT fk_productCategort_product FOREIGN KEY (product_id) REFERENCES product (id);
+ALTER TABLE product_category ADD CONSTRAINT fk_productCategort_category FOREIGN KEY (category_id) REFERENCES category (id);
 
+ALTER TABLE notification ADD CONSTRAINT fk_notification_user FOREIGN KEY (user_id) REFERENCES user (id);
+ALTER TABLE notification ADD CONSTRAINT fk_notification_post FOREIGN KEY (post_id) REFERENCES post (id);
+
+ALTER TABLE product ADD CONSTRAINT fk_product_brand FOREIGN KEY (brand_id) REFERENCES brand (id);
+ALTER TABLE product ADD CONSTRAINT fk_product_size FOREIGN KEY (product_size) REFERENCES product_size (id);
+ALTER TABLE product ADD CONSTRAINT fk_product_category FOREIGN KEY (category_id) REFERENCES category (id);
+
+ALTER TABLE image ADD CONSTRAINT fk_image_post FOREIGN KEY (post_id) REFERENCES post (id);
+ALTER TABLE image ADD CONSTRAINT fk_image_user FOREIGN KEY (upload_by) REFERENCES user (id);
+
+ALTER TABLE orders ADD CONSTRAINT fk_orders_promotion FOREIGN KEY (promotion_id) REFERENCES promotion (id);
+ALTER TABLE orders ADD CONSTRAINT fk_orders_product FOREIGN KEY (product_id) REFERENCES product (id);
+ALTER TABLE orders ADD CONSTRAINT fk_orders_productSize FOREIGN KEY (product_size) REFERENCES product_size (id);
+
+ALTER TABLE finance ADD CONSTRAINT fk_finance_order FOREIGN KEY (order_id) REFERENCES orders (id);

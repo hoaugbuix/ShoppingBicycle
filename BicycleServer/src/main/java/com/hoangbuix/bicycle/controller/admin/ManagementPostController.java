@@ -27,12 +27,12 @@ public class ManagementPostController {
         PostEntity result = null;
         try {
             PostEntity post = postService.findByTitle(req.getTitle());
-            if (post.getTitle() != null){
-                throw new BadRequestException("Đã tồn tại");
-            } else  {
+            if (post != null) {
+                throw new DuplicateRecordException("Đã tồn tại");
+            } else {
                 id = postService.save(req);
+                result = postService.findById(id);
             }
-            result = postService.findById(id);
         } catch (Exception e) {
 //            e.printStackTrace();
             throw new BadRequestException("lỗi crete");

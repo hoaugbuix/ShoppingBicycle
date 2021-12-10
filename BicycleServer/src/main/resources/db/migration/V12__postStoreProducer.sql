@@ -1,14 +1,12 @@
 drop procedure if EXISTS post_create;
 DELIMITER $$
-CREATE PROCEDURE post_create(
-    in _content VARCHAR(255),
-    in _title VARCHAR(255),
-    in _slug VARCHAR(255),
-    in _thumbnail VARCHAR(255),
-    in _description VARCHAR(255),
-    in _createdBy INTEGER,
-    in _updatedBy INTEGER
-)
+CREATE PROCEDURE post_create(in _content VARCHAR(255),
+                             in _title VARCHAR(255),
+                             in _slug VARCHAR(255),
+                             in _thumbnail VARCHAR(255),
+                             in _description VARCHAR(255),
+                             in _createdBy INTEGER,
+                             in _updatedBy INTEGER)
 body:
 BEGIN
     declare
@@ -24,7 +22,8 @@ BEGIN
         SIGNAL
             SQLSTATE '45000' SET MESSAGE_TEXT = @message_text;
     else
-        insert into post(content, title, slug, thumbnail, description, created_by, updated_by, active_flag, created_date, updated_date)
+        insert into post(content, title, slug, thumbnail, description, created_by, updated_by, active_flag,
+                         created_date, updated_date)
         values (_content, _title, _slug, _thumbnail, _description, _createdBy, _updatedBy, 1, NOW(), NOW());
         set
             newId = last_insert_id();
@@ -36,26 +35,24 @@ DELIMITER ;
 -- update
 drop procedure if EXISTS post_update;
 DELIMITER $$
-CREATE PROCEDURE post_update(
-    in _content VARCHAR(255),
-    in _title VARCHAR(100),
-    in _slug VARCHAR(255),
-    in _thumbnail VARCHAR(255),
-    in _description VARCHAR(255),
-    in _updatedBy INTEGER,
-    in _active_flag INTEGER
-)
+CREATE PROCEDURE post_update(in _content VARCHAR(255),
+                             in _title VARCHAR(100),
+                             in _slug VARCHAR(255),
+                             in _thumbnail VARCHAR(255),
+                             in _description VARCHAR(255),
+                             in _updatedBy INTEGER,
+                             in _active_flag INTEGER)
 body:
 begin
     update post
-    set content = _content,
-        title = _title,
-        slug = _slug,
-        thumbnail = _thumbnail,
-        description   = _description,
-        active_flag   = _active_flag,
-        updated_by = _updatedBy,
-        updated_date  = NOW();
+    set content      = _content,
+        title        = _title,
+        slug         = _slug,
+        thumbnail    = _thumbnail,
+        description  = _description,
+        active_flag  = _active_flag,
+        updated_by   = _updatedBy,
+        updated_date = NOW();
 END$$
 DELIMITER ;
 --

@@ -671,3 +671,160 @@
 2021-12-06 19:58:31 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
 2021-12-06 19:58:31 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
 2021-12-06 19:58:31 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 19:59:50 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 19:59:50 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 19:59:50 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:00:03 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 20:00:03 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:00:03 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:21:27 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 20:21:27 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:21:27 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:22:24 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 20:22:24 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:22:24 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:22:45 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 20:22:45 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:22:45 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:22:45 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:22:45 INFO  QueryConstant:25 - query property ====>  call post_create(?, ?, ?, ?, ?, ?, ?)
+2021-12-06 20:22:45 INFO  BaseDAOImpl:214 - insert =>>> [x, xxxx, x, x.png, x, 1, 1]
+2021-12-06 20:22:45 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 20:22:48 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 20:22:48 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:22:48 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:22:58 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 20:22:58 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:22:58 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 20:22:59 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 20:22:59 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:22:59 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 20:23:06 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 20:23:06 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:23:06 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 20:23:06 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:24:02 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2021-12-06 20:24:02 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:24:02 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:24:02 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2021-12-06 20:24:02 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-12-06 20:24:02 INFO  BaseDAOImpl:214 - insert =>>> [Hoang, Bui Van SP, dasq1s, hoangbuisp, $2a$12$1zqORt59aqHhVEA1.lMyCenJ5CEx1MSqeWviinAfbKbC4rCzd01E6, buihoangsp@gmail.com]
+2021-12-06 20:24:02 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 20:24:02 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2021-12-06 20:24:02 INFO  BaseDAOImpl:214 - insert =>>> [2, 3]
+2021-12-06 20:24:02 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-06 20:24:14 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-06 20:24:14 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:24:14 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-06 20:24:14 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:24:20 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-06 20:24:20 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:24:20 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 20:24:20 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:24:23 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-06 20:24:23 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:24:23 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:24:27 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-06 20:24:27 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:24:27 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:24:27 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:24:27 INFO  QueryConstant:25 - query property ====>  call post_create(?, ?, ?, ?, ?, ?, ?)
+2021-12-06 20:24:27 INFO  BaseDAOImpl:214 - insert =>>> [x, xx, x, x.png, x, 2, 2]
+2021-12-06 20:24:27 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 20:24:38 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-06 20:24:38 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:24:38 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 20:24:38 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:24:56 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-06 20:24:56 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:24:56 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 20:24:56 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:25:26 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-06 20:25:26 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:25:26 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 20:25:26 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:25:34 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-06 20:25:34 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:25:34 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 20:25:34 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:25:56 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-06 20:25:56 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:25:56 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 20:26:04 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-06 20:26:04 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-06 20:26:04 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-06 20:26:04 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-06 20:26:04 INFO  QueryConstant:25 - query property ====>  call post_update(?, ?, ?, ?, ?, ?, ?)
+2021-12-06 20:26:04 INFO  BaseDAOImpl:144 - ===> updating ... [xxxccccc, xxd, xxxccc, xxx.png, this is xxx, 2, 0]
+2021-12-08 22:39:40 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-08 22:39:51 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-08 22:40:12 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-08 22:40:16 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-08 22:44:06 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:44:07 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2021-12-08 22:44:07 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2021-12-08 22:44:07 INFO  BaseDAOImpl:212 - insert =>>> [Hoang, Bui Van SP, dasq1s, hoangbuisp, $2a$12$XKBwdOc70OXmESYMg5dbwe04d336b61HmBtDu52xDvEDBwONrkZYC, buihoangsp@gmail.com]
+2021-12-08 22:44:07 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-08 22:44:07 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2021-12-08 22:44:07 INFO  BaseDAOImpl:212 - insert =>>> [1, 3]
+2021-12-08 22:44:07 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2021-12-08 22:44:11 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:44:11 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:44:11 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:44:11 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:44:17 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:44:17 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:44:17 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-08 22:44:24 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:44:24 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:46:58 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:46:58 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:46:58 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-08 22:47:31 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:47:31 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:47:31 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-08 22:47:38 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:47:38 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:47:38 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-08 22:48:50 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:48:50 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:48:51 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-08 22:51:59 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:51:59 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:52:07 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-08 22:53:32 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:53:32 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:53:38 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-08 22:54:25 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:54:26 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:54:26 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-08 22:55:33 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:55:33 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:55:34 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-08 22:57:33 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 22:57:33 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 22:57:33 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-08 22:57:40 INFO  QueryConstant:25 - query property ====>  call post_findByTitle(?)
+2021-12-08 22:58:05 INFO  QueryConstant:25 - query property ====>  call post_create(?, ?, ?, ?, ?, ?, ?)
+2021-12-08 22:58:07 INFO  BaseDAOImpl:212 - insert =>>> [x, xx, x, x.png, x, 1, 1]
+2021-12-08 22:58:25 INFO  QueryConstant:25 - query property ====>  call post_findById(?)
+2021-12-08 23:00:07 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 23:00:07 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 23:03:15 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 23:03:15 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 23:03:16 INFO  QueryConstant:25 - query property ====>  call brand_findByBrandName(?)
+2021-12-08 23:03:16 INFO  QueryConstant:25 - query property ====>  call brand_create(?, ?)
+2021-12-08 23:03:16 INFO  BaseDAOImpl:212 - insert =>>> [Brand Names, gg]
+2021-12-08 23:03:16 INFO  QueryConstant:25 - query property ====>  call brand_findById(?)
+2021-12-08 23:03:19 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 23:03:19 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 23:03:19 INFO  QueryConstant:25 - query property ====>  call brand_findByBrandName(?)
+2021-12-08 23:03:19 INFO  QueryConstant:25 - query property ====>  call brand_create(?, ?)
+2021-12-08 23:03:19 INFO  BaseDAOImpl:212 - insert =>>> [null, null]
+2021-12-08 23:03:19 ERROR BaseDAOImpl:240 - Column 'brand_name' cannot be null
+2021-12-08 23:07:13 INFO  JwtUserDetailsService:20 - email ====== buihoangsp@gmail.com
+2021-12-08 23:07:13 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2021-12-08 23:07:13 INFO  QueryConstant:25 - query property ====>  call brand_findByBrandName(?)
+2021-12-08 23:07:13 INFO  QueryConstant:25 - query property ====>  call brand_create(?, ?)
+2021-12-08 23:07:13 INFO  BaseDAOImpl:212 - insert =>>> [null, null]
+2021-12-08 23:07:13 ERROR BaseDAOImpl:240 - Column 'brand_name' cannot be null

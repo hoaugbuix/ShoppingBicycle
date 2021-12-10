@@ -1,17 +1,12 @@
 package com.hoangbuix.bicycle.service.Impl;
 
-import com.hoangbuix.bicycle.dao.BrandDAO;
 import com.hoangbuix.bicycle.dao.PostDAO;
-import com.hoangbuix.bicycle.entity.BrandEntity;
 import com.hoangbuix.bicycle.entity.PostEntity;
 import com.hoangbuix.bicycle.entity.UserEntity;
 import com.hoangbuix.bicycle.exception.NotFoundException;
-import com.hoangbuix.bicycle.model.request.create.CreateBrandReq;
 import com.hoangbuix.bicycle.model.request.create.CreatePostReq;
-import com.hoangbuix.bicycle.model.request.update.UpdateBrandReq;
 import com.hoangbuix.bicycle.model.request.update.UpdatePostReq;
 import com.hoangbuix.bicycle.security.CustomUserDetails;
-import com.hoangbuix.bicycle.service.BrandService;
 import com.hoangbuix.bicycle.service.PostService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
