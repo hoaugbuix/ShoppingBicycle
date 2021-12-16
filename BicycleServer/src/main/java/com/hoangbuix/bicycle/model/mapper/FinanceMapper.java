@@ -2,7 +2,6 @@ package com.hoangbuix.bicycle.model.mapper;
 
 
 import com.hoangbuix.bicycle.entity.FinanceEntity;
-import com.hoangbuix.bicycle.entity.ProductSizeEntity;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

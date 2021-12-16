@@ -174,7 +174,7 @@ CREATE TABLE product_size
     PRIMARY KEY (id)
 );
 
--- DROP TABLE promotio;
+-- DROP TABLE promotion;
 CREATE TABLE promotion
 (
     id                     INTEGER      NOT NULL AUTO_INCREMENT,
@@ -203,7 +203,7 @@ CREATE TABLE orders
     receiver_address varchar(255)            DEFAULT NULL,
     receiver_name    varchar(255)            DEFAULT NULL,
     receiver_phone   varchar(255)            DEFAULT NULL,
-    status           INTEGER                     DEFAULT NULL,
+    status           varchar(255)                     DEFAULT NULL,
     total_price      bigint                  DEFAULT NULL,
     buyer            bigint                  DEFAULT NULL,
     created_by       bigint                  DEFAULT NULL,
@@ -241,8 +241,8 @@ CREATE TABLE configuration
 ALTER TABLE user_role ADD CONSTRAINT fk_userRole_user FOREIGN KEY (user_id) REFERENCES user (id);
 ALTER TABLE user_role ADD CONSTRAINT fk_userRole_role FOREIGN KEY (role_id) REFERENCES role (id);
 
-ALTER TABLE product_category ADD CONSTRAINT fk_productCategort_product FOREIGN KEY (product_id) REFERENCES product (id);
-ALTER TABLE product_category ADD CONSTRAINT fk_productCategort_category FOREIGN KEY (category_id) REFERENCES category (id);
+ALTER TABLE product_category ADD CONSTRAINT fk_productCategory_product FOREIGN KEY (product_id) REFERENCES product (id);
+ALTER TABLE product_category ADD CONSTRAINT fk_productCategory_category FOREIGN KEY (category_id) REFERENCES category (id);
 
 ALTER TABLE notification ADD CONSTRAINT fk_notification_user FOREIGN KEY (user_id) REFERENCES user (id);
 ALTER TABLE notification ADD CONSTRAINT fk_notification_post FOREIGN KEY (post_id) REFERENCES post (id);

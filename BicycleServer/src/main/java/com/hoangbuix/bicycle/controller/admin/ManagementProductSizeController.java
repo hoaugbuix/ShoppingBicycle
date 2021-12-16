@@ -16,6 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/product-size")
+@CrossOrigin(origins = "*")
 public class ManagementProductSizeController {
     final Logger log = Logger.getLogger(ManagementProductSizeController.class);
     @Autowired

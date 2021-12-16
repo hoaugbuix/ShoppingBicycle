@@ -1,10 +1,14 @@
 package com.hoangbuix.bicycle.entity;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Entity(name = "promotion")
 @Table(name = "promotion")
@@ -13,7 +17,7 @@ public class PromotionEntity extends BaseEntity {
 
     private String couponCode;
 
-    private int discountType;
+    private String discountType;
 
     private int discountValue;
 
@@ -22,4 +26,5 @@ public class PromotionEntity extends BaseEntity {
     private boolean isActive;
 
     private boolean isPublic;
+
 }

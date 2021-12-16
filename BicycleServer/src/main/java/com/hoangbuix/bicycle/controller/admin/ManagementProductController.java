@@ -17,6 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/product")
+@CrossOrigin(origins = "*")
 public class ManagementProductController {
     final Logger log = Logger.getLogger(ManagementCategoryController.class);
     @Autowired

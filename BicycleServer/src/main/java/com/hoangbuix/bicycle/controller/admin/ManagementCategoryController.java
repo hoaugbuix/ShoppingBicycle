@@ -15,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/category")
+@CrossOrigin(origins = "*")
 public class ManagementCategoryController {
     final Logger log = Logger.getLogger(ManagementCategoryController.class);
 

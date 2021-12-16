@@ -1,10 +1,8 @@
 use shopping_bicycle;
 drop procedure if EXISTS finance_create;
 DELIMITER $$
-CREATE PROCEDURE finance_create (
-    in _amount integer,
-    in _orderId integer
-)
+CREATE PROCEDURE finance_create(in _amount integer,
+                                in _orderId integer)
 body:
 
 BEGIN
@@ -21,7 +19,7 @@ BEGIN
         SIGNAL
             SQLSTATE '45000' SET MESSAGE_TEXT = @message_text;
     else
-        insert into finance(amount, order_id,  active_flag, created_date, updated_date)
+        insert into finance(amount, order_id, active_flag, created_date, updated_date)
         values (_amount, _orderId, 1, NOW(), NOW());
         set
             newId = last_insert_id();
@@ -33,19 +31,16 @@ DELIMITER ;
 -- update
 drop procedure if EXISTS finance_update;
 DELIMITER $$
-CREATE PROCEDURE finance_update(
-    in _amount integer,
-    in _orderId integer,
-    in _active INTEGER
-)
+CREATE PROCEDURE finance_update(in _amount integer,
+                                in _orderId integer,
+                                in _active INTEGER)
 body:
 begin
     update finance
-    set 
-        amount = _amount,
-        order_id = _orderId,
-        active_flag   = _active,
-        updated_date  = NOW();
+    set amount       = _amount,
+        order_id     = _orderId,
+        active_flag  = _active,
+        updated_date = NOW();
 END$$
 DELIMITER ;
 

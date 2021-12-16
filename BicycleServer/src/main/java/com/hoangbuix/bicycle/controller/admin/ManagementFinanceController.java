@@ -1,14 +1,10 @@
 package com.hoangbuix.bicycle.controller.admin;
 
 import com.hoangbuix.bicycle.entity.FinanceEntity;
-import com.hoangbuix.bicycle.entity.ProductSizeEntity;
 import com.hoangbuix.bicycle.exception.BadRequestException;
 import com.hoangbuix.bicycle.exception.NotFoundException;
 import com.hoangbuix.bicycle.model.request.create.CreateFinanceReq;
-import com.hoangbuix.bicycle.model.request.create.CreateProductSizeReq;
-import com.hoangbuix.bicycle.model.request.update.UpdateFinanceReq;
 import com.hoangbuix.bicycle.service.FinanceService;
-import com.hoangbuix.bicycle.service.ProductSizeService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -20,6 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/finance")
+@CrossOrigin(origins = "*")
 public class ManagementFinanceController {
     final Logger log = Logger.getLogger(ManagementFinanceController.class);
     @Autowired

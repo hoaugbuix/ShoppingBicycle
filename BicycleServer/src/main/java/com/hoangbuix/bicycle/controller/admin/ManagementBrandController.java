@@ -17,6 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/brand")
+@CrossOrigin(origins = "*")
 public class ManagementBrandController {
     @Autowired
     private BrandService brandService;

@@ -29,6 +29,7 @@ import static com.hoangbuix.bicycle.util.Constant.MAX_AGE_COOKIE;
 
 @RestController
 @RequestMapping("/api/v1/user")
+@CrossOrigin(origins = "*")
 public class ManagementUserController {
 
     @Autowired

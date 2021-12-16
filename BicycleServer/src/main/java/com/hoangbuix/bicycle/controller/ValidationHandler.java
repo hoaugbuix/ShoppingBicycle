@@ -1,4 +1,4 @@
-package com.hoangbuix.bicycle.controller.admin;
+package com.hoangbuix.bicycle.controller;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

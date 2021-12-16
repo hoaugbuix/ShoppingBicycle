@@ -1,5 +1,7 @@
 package com.hoangbuix.bicycle.config;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -13,9 +15,12 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 @Configuration
 @EnableSwagger2
+@ConfigurationProperties("app.api")
+@ConditionalOnProperty(name = "app.api.swagger.enable", havingValue = "true", matchIfMissing = false)
 public class Swagger2Config {
     private static final String AUTH_END_POINT = "/oauth/token";
 
@@ -26,9 +31,9 @@ public class Swagger2Config {
                 .apis(RequestHandlerSelectors.basePackage("com.hoangbuix.bicycle"))
                 .paths(PathSelectors.regex("/.*"))
                 .build()
-                .apiInfo(apiEndPointsInfo());
-//                .securityContexts(Collections.singletonList(securityContext()))
-//                .securitySchemes(Collections.singletonList(securityScheme()));
+                .apiInfo(apiEndPointsInfo())
+                .securityContexts(Collections.singletonList(securityContext()))
+                .securitySchemes(Collections.singletonList(securityScheme()));
 
     }
 

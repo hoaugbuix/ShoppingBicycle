@@ -1,11 +1,8 @@
 package com.hoangbuix.bicycle.dao.impl;
 
 import com.hoangbuix.bicycle.dao.FinanceDAO;
-import com.hoangbuix.bicycle.dao.ProductSizeDAO;
 import com.hoangbuix.bicycle.entity.FinanceEntity;
-import com.hoangbuix.bicycle.entity.ProductSizeEntity;
 import com.hoangbuix.bicycle.model.mapper.FinanceMapper;
-import com.hoangbuix.bicycle.model.mapper.ProductSizeMapper;
 import com.hoangbuix.bicycle.util.QueryConstant;
 import com.hoangbuix.bicycle.util.SqlConstant;
 import org.springframework.stereotype.Component;

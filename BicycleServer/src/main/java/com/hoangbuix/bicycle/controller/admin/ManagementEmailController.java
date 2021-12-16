@@ -16,6 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/email")
+@CrossOrigin(origins = "*")
 public class ManagementEmailController {
     @Autowired
     private EmailService emailService;

@@ -1,11 +1,8 @@
 package com.hoangbuix.bicycle.service;
 
 import com.hoangbuix.bicycle.entity.FinanceEntity;
-import com.hoangbuix.bicycle.entity.ProductSizeEntity;
 import com.hoangbuix.bicycle.model.request.create.CreateFinanceReq;
-import com.hoangbuix.bicycle.model.request.create.CreateProductSizeReq;
 import com.hoangbuix.bicycle.model.request.update.UpdateFinanceReq;
-import com.hoangbuix.bicycle.model.request.update.UpdateProductSizeReq;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
