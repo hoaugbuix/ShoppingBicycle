@@ -1,9 +1,11 @@
 package com.hoangbuix.bicycle.model.mapper;
 
+import com.hoangbuix.bicycle.entity.RoleEntity;
 import com.hoangbuix.bicycle.entity.UserEntity;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Collections;
 
 public class UserMapper implements RowMapper<UserEntity> {
     @Override
@@ -20,14 +22,15 @@ public class UserMapper implements RowMapper<UserEntity> {
             user.setActiveFlag(resultSet.getInt("active_flag"));
             user.setCreatedDate(resultSet.getDate("created_date"));
             user.setUpdatedDate(resultSet.getDate("updated_date"));
-//            try {
-//                RoleEntity role = new RoleEntity();
-//                role.setId(resultSet.getInt("id"));
-//                role.setRoleName(resultSet.getString("role_name"));
-//                user.setRoles(role);
-//            }catch (Exception e){
-//                e.printStackTrace();
-//            }
+            try {
+                RoleEntity role = new RoleEntity();
+                if (resultSet.getString("role_name") != null || resultSet.getString("role_name") != "") {
+                    role.setRoleName(resultSet.getString("role_name"));
+                    user.setRoles(Collections.singleton(role));
+                }
+            }catch (Exception e){
+                e.printStackTrace();
+            }
             return user;
         } catch (SQLException e) {
             e.printStackTrace();

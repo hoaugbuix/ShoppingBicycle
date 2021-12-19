@@ -88,12 +88,35 @@ drop procedure if EXISTS user_findByEmail;
 DELIMITER $$
 CREATE PROCEDURE user_findByEmail(in _email varchar(100))
 begin
-    select *
-    from user
-    where email = _email
-      and (active_flag = 1
-        or active_flag = 0)
-    order by first_name;
+    SELECT DISTINCT
+    u.id,
+    u.first_name,
+    u.last_name,
+    u.avatar,
+    u.user_name,
+    u.password,
+    u.email,
+    GROUP_CONCAT(r.role_name)as role_name,
+    u.active_flag,
+    u.created_date,
+    u.updated_date
+FROM
+    user u,
+    role r
+WHERE
+    1 = 1
+        AND r.role_name IN (SELECT
+            r1.role_name
+        FROM
+            role r1,
+            user_role ur1
+        WHERE 1 = 1
+			and u.id = ur1.user_id
+            and r1.id = ur1.role_id)
+        AND u.email = _email
+        AND (u.active_flag = 1 OR u.active_flag = 0)
+GROUP BY u.id
+ORDER BY first_name;
 end$$
 DELIMITER ;
 

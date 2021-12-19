@@ -25,7 +25,6 @@ public class CustomUserDetails implements UserDetails {
         for (RoleEntity role : user.getRoles()) {
             roles.add(new SimpleGrantedAuthority("ROLE_" + role.getRoleName()));
         }
-
         return roles;
     }
 

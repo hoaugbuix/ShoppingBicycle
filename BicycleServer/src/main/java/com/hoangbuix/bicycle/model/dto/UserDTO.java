@@ -3,6 +3,7 @@ package com.hoangbuix.bicycle.model.dto;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 public class UserDTO {
@@ -26,5 +27,5 @@ public class UserDTO {
 
     private Date updatedDate;
 
-    private String role;
+    private List<String> role;
 }
