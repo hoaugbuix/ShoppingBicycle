@@ -1150,3 +1150,9 @@
 2021-12-26 15:55:26 ERROR BaseDAOImpl:240 - Cannot add or update a child row: a foreign key constraint fails (`shopping_bicycle`.`finance`, CONSTRAINT `fk_finance_order` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))
 2021-12-26 15:55:26 ERROR ManagementFinanceController:36 - 
 2021-12-26 15:55:26 INFO  QueryConstant:25 - query property ====>  call finance_findById(?)
+2022-02-05 00:45:55 INFO  OrderDAOImpl:45 - find All
+2022-02-05 00:45:55 INFO  QueryConstant:25 - query property ====>  call order_findAll()
+2022-02-05 00:50:19 INFO  OrderDAOImpl:45 - find All
+2022-02-05 00:50:19 INFO  QueryConstant:25 - query property ====>  call order_findAll()
+2022-02-05 00:50:21 INFO  OrderDAOImpl:45 - find All
+2022-02-05 00:50:21 INFO  QueryConstant:25 - query property ====>  call order_findAll()

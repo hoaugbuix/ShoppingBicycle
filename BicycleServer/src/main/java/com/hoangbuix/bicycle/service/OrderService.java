@@ -18,4 +18,6 @@ public interface OrderService {
     List<OrderEntity> findAll();
 
     OrderEntity findById(int id);
+
+    OrderEntity findByStatusAndProductId(String status, int productId);
 }

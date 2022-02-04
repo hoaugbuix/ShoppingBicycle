@@ -69,4 +69,13 @@ public class ManagementOrderController {
         }
         return new ResponseEntity<>(order, HttpStatus.OK);
     }
+
+    @GetMapping("get-status-productId/{id}")
+    private ResponseEntity<?> findByStatusAndProductId(String status,int productId) {
+        OrderEntity order = orderService.findByStatusAndProductId(status, productId);
+        if (order.getId() == null) {
+            throw new NotFoundException("0");
+        }
+        return new ResponseEntity<>(order, HttpStatus.OK);
+    }
 }

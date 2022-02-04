@@ -142,3 +142,16 @@ begin
         or active_flag = 0);
 end$$
 DELIMITER ;
+
+drop procedure if EXISTS order_findByStatusAndProductId;
+DELIMITER $$
+CREATE PROCEDURE order_findByStatusAndProductId(in _status Varchar(255), in _productId int)
+begin
+    select *
+    from orders
+    where status = _status and product_id = _productId
+      and (active_flag = 1
+        or active_flag = 0);
+end$$
+DELIMITER ;
+

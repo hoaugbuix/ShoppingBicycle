@@ -53,4 +53,9 @@ public class OrderDAOImpl extends BaseDAOImpl<OrderEntity> implements OrderDAO<O
         return order.isEmpty() ? null : order.get(0);
     }
 
+    @Override
+    public OrderEntity findByStatusAndProductId(String status, int productId) {
+        List<OrderEntity> order = query(QueryConstant.callQuery(ORDER, SqlConstant.FIND_BY_STATUS_AND_PRODUCT_ID, status, productId), new OrderMapper(), status, productId);
+        return order.isEmpty() ? null : order.get(0);
+    }
 }

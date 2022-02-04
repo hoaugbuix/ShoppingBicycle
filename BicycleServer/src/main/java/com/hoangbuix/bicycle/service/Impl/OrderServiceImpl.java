@@ -91,4 +91,13 @@ public class OrderServiceImpl implements OrderService {
         }
         return order;
     }
+
+    @Override
+    public OrderEntity findByStatusAndProductId(String status, int productId) {
+        OrderEntity order = orderDAO.findByStatusAndProductId(status, productId);
+        if (order == null) {
+            throw new NotFoundException("Not Found!");
+        }
+        return order;
+    }
 }
