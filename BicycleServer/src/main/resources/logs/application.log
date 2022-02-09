@@ -1156,3 +1156,39 @@
 2022-02-05 00:50:19 INFO  QueryConstant:25 - query property ====>  call order_findAll()
 2022-02-05 00:50:21 INFO  OrderDAOImpl:45 - find All
 2022-02-05 00:50:21 INFO  QueryConstant:25 - query property ====>  call order_findAll()
+2022-02-05 15:20:23 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2022-02-05 15:20:23 INFO  QueryConstant:25 - query property ====>  call role_findByRoleName(?)
+2022-02-05 15:20:24 INFO  QueryConstant:25 - query property ====>  call user_create(?, ?, ?, ?, ?, ?)
+2022-02-05 15:20:24 INFO  BaseDAOImpl:212 - insert =>>> [Hoang, Bui Van, dasq1s, hoangbui, $2a$12$otojlQMnuEojyI9QmfU4uewX.dKaZ3FAUTBNQQiGWBoKxIHOVnCF2, buihoang9b8@gmail.com]
+2022-02-05 15:20:24 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2022-02-05 15:20:24 INFO  QueryConstant:25 - query property ====>  call userRole_create(?, ?)
+2022-02-05 15:20:24 INFO  BaseDAOImpl:212 - insert =>>> [1, 3]
+2022-02-05 15:20:24 INFO  QueryConstant:25 - query property ====>  call user_findById(?)
+2022-02-05 15:20:30 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2022-02-05 15:20:30 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2022-02-05 15:20:31 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2022-02-05 15:20:31 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2022-02-05 15:21:17 INFO  UserDAOImpl:42 - find All
+2022-02-05 15:21:17 INFO  QueryConstant:25 - query property ====>  call user_findAll()
+2022-02-05 15:22:34 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2022-02-05 15:22:34 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2022-02-05 15:22:34 INFO  QueryConstant:25 - query property ====>  call productSize_create(?, ?)
+2022-02-05 15:22:34 INFO  BaseDAOImpl:212 - insert =>>> [1, 44]
+2022-02-05 15:22:34 INFO  QueryConstant:25 - query property ====>  call productSize_findById(?)
+2022-02-05 15:23:03 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2022-02-05 15:23:03 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2022-02-05 15:23:03 INFO  QueryConstant:25 - query property ====>  call brand_findByBrandName(?)
+2022-02-05 15:23:03 INFO  QueryConstant:25 - query property ====>  call brand_create(?, ?)
+2022-02-05 15:23:03 INFO  BaseDAOImpl:212 - insert =>>> [Brand Names, gg]
+2022-02-05 15:23:03 INFO  QueryConstant:25 - query property ====>  call brand_findById(?)
+2022-02-05 15:23:12 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2022-02-05 15:23:12 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2022-02-05 15:23:12 INFO  QueryConstant:25 - query property ====>  call category_create(?, ?, ?)
+2022-02-05 15:23:12 INFO  BaseDAOImpl:212 - insert =>>> [x, x, this is x]
+2022-02-05 15:23:12 INFO  QueryConstant:25 - query property ====>  call category_findById(?)
+2022-02-05 15:23:22 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2022-02-05 15:23:22 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2022-02-05 15:23:22 INFO  ManagementPromotionController:29 - get All
+2022-02-05 15:23:22 INFO  PromotionServiceImpl:92 - find all
+2022-02-05 15:23:22 INFO  PromotionDAOImpl:42 - find All
+2022-02-05 15:23:22 INFO  QueryConstant:25 - query property ====>  call promotion_findAll()

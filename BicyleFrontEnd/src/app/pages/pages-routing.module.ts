@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { HomePageComponent } from './layout/home-page/home-page.component';
 import { PagesComponent } from './pages.component';
 
 const routes: Routes = [
@@ -11,26 +9,30 @@ const routes: Routes = [
     component: PagesComponent,
     children: [
       {
-        path: 'home',
-        component: HomeComponent,
-      },
-    ],
-  },
-  {
-    path: 'auth',
-    children: [
-      {
         path: '',
-        component: LoginComponent,
-      },
-      {
-        path: 'login',
-        component: LoginComponent,
+        component: HomePageComponent,
       },
     ],
   },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '**', component: NotFoundComponent, },
+  // {
+  //   path: 'admin',
+  //   loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule),
+  // },
+  // {
+  //   path: 'auth',
+  //   children: [
+  //     {
+  //       path: '',
+  //       component: LoginComponent,
+  //     },
+  //     {
+  //       path: 'login',
+  //       component: LoginComponent,
+  //     },
+  //   ],
+  // },
+  // { path: '', redirectTo: 'home', pathMatch: 'full' },
+  // { path: '**', component: NotfoundComponent, },
 ];
 
 @NgModule({
