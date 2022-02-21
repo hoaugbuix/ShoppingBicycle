@@ -1192,3 +1192,20 @@
 2022-02-05 15:23:22 INFO  PromotionServiceImpl:92 - find all
 2022-02-05 15:23:22 INFO  PromotionDAOImpl:42 - find All
 2022-02-05 15:23:22 INFO  QueryConstant:25 - query property ====>  call promotion_findAll()
+2022-02-10 15:35:54 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2022-02-10 15:35:55 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2022-02-10 15:35:55 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2022-02-10 15:35:55 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2022-02-10 15:45:12 INFO  QueryConstant:25 - query property ====>  call product_findAll()
+2022-02-10 15:47:13 INFO  QueryConstant:25 - query property ====>  call product_findAll()
+2022-02-10 16:55:33 INFO  QueryConstant:25 - query property ====>  call product_findAll()
+2022-02-10 22:55:30 INFO  JwtUserDetailsService:20 - email ====== buihoang9b8@gmail.com
+2022-02-10 22:55:30 INFO  QueryConstant:25 - query property ====>  call user_findByEmail(?)
+2022-02-10 22:55:45 INFO  ManagementCategoryController:27 - get All s
+2022-02-10 22:55:45 INFO  CategoryServiceImpl:53 - find all
+2022-02-10 22:55:45 INFO  CategoryDAOImpl:41 - find All
+2022-02-10 22:55:45 INFO  QueryConstant:25 - query property ====>  call category_findAll()
+2022-02-11 10:05:45 INFO  ManagementCategoryController:27 - get All
+2022-02-11 10:05:45 INFO  CategoryServiceImpl:53 - find all
+2022-02-11 10:05:45 INFO  CategoryDAOImpl:41 - find All
+2022-02-11 10:05:45 INFO  QueryConstant:25 - query property ====>  call category_findAll()

@@ -31,7 +31,7 @@ public class ManagementProductController {
     private ResponseEntity<?> create(@Valid @RequestBody ProductEntity product) {
         int id = 0;
         try {
-            CategoryEntity cate = categoryService.findById(product.getCategoyId());
+            CategoryEntity cate = categoryService.findById(product.getCategoryId());
             id = productService.save(product);
             if (id <= 0) {
                 throw new BadRequestException("");

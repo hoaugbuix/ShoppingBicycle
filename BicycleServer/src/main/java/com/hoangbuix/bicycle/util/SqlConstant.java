@@ -17,5 +17,5 @@ public class SqlConstant {
     public static final String FIND_BY_ROLE_NAME = "_findByRoleName";
 
     // Orders
-    public static  final String FIND_BY_STATUS_AND_PRODUCT_ID = "_findByStatusAndProductId";
+    public static final String FIND_BY_STATUS_AND_PRODUCT_ID = "_findByStatusAndProductId";
 }

@@ -36,7 +36,8 @@ public class DBConfig {
     private String PACKAGES_TO_SCAN;
 
     @Bean
-    public DataSource dataSource() {
+    public DataSource dataSource() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+        Class.forName(DRIVER).newInstance();
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(DRIVER);
         dataSource.setUrl(URL);

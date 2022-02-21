@@ -71,7 +71,7 @@ public class ManagementOrderController {
     }
 
     @GetMapping("get-status-productId/{id}")
-    private ResponseEntity<?> findByStatusAndProductId(String status,int productId) {
+    private ResponseEntity<?> findByStatusAndProductId(String status, int productId) {
         OrderEntity order = orderService.findByStatusAndProductId(status, productId);
         if (order.getId() == null) {
             throw new NotFoundException("0");

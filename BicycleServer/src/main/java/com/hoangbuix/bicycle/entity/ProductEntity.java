@@ -36,9 +36,15 @@ public class ProductEntity extends BaseEntity {
     @Column(name = "product_image")
     private String productImage;
 
+    @Column(name = "quantity_product")
+    private int quantityProduct;
+
+    @Column(name = "total_product")
+    private int totalProduct;
+
     @Column(name = "total_sold")
     private int totalSold;
 
     @Column(name = "category_id")
-    private int categoyId;
+    private int categoryId;
 }

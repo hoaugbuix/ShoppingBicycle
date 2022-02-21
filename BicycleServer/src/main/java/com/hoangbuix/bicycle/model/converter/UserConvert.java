@@ -7,7 +7,6 @@ import com.hoangbuix.bicycle.model.request.create.CreateUserReq;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 
@@ -40,7 +39,7 @@ public class UserConvert {
         dto.setCreatedDate(entity.getCreatedDate());
         dto.setUpdatedDate(entity.getUpdatedDate());
         if (entity.getRoles() != null) {
-            for (RoleEntity role : entity.getRoles()){
+            for (RoleEntity role : entity.getRoles()) {
                 List<String> lstRole = new ArrayList<>();
                 lstRole.add(role.getRoleName());
                 dto.setRole(lstRole);

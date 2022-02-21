@@ -28,7 +28,7 @@ public class UserMapper implements RowMapper<UserEntity> {
                     role.setRoleName(resultSet.getString("role_name"));
                     user.setRoles(Collections.singleton(role));
                 }
-            }catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
             return user;

@@ -24,7 +24,7 @@ public class ManagementCategoryController {
 
     @GetMapping("/get-all")
     public ResponseEntity<?> getAll() {
-        log.info("get All s");
+        log.info("get All");
         List<CategoryEntity> categories = categoryService.findAll();
         if (categories.isEmpty()) {
             throw new NotFoundException("Không tồn tại thể loại sản phẩm nào");

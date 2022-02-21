@@ -9,7 +9,9 @@ CREATE PROCEDURE product_create(
     in _brandId INTEGER,
     in _price float,
     in _productImage VARCHAR(255),
-    in _total_sold INTEGER,
+    in _total_product INTEGER,
+    in _total_sold    INTEGER,
+    in _quantity_product INTEGER,
     in _categoryId INTEGER
 )
 body:
@@ -28,8 +30,8 @@ BEGIN
         SIGNAL
             SQLSTATE '45000' SET MESSAGE_TEXT = @message_text;
     else
-        insert into product(product_name, product_code, description, slug, brand_id, price, product_image, toal_sold, category_id, active_flag, created_date, updated_date)
-        values (_productName, _productCode, _description, _slug, _brandId, _price, _productImage, _total_sold, _categoryId, 1, NOW(), NOW());
+        insert into product(product_name, product_code, description, slug, brand_id, price, product_image, total_product, toal_sold, quantity_product, category_id, active_flag, created_date, updated_date)
+        values (_productName, _productCode, _description, _slug, _brandId, _price, _productImage, _total_product, _total_sold, _quantity_product, _categoryId, 1, NOW(), NOW());
         set
             newId = last_insert_id();
     end if;
@@ -48,7 +50,8 @@ CREATE PROCEDURE product_update(
     in _brandId INTEGER,
     in _price float,
     in _productImage VARCHAR(255),
-    in _total_sold INTEGER,
+    in _total_sold    INTEGER,
+    in _quantity_product INTEGER,
     in _categoryId INTEGER,
     in _active INTEGER
 )
@@ -63,6 +66,7 @@ begin
         price = _price,
         product_image = _productImage,
         total_sold = _total_sold,
+        quantity_product = _quantity_product,
         category_id = _categoryId,
         active_flag   = _active,
         updated_date  = NOW();

@@ -38,19 +38,19 @@ public class UserServiceImpl implements UserService {
         }
         RoleEntity role = roleDAO.findByRoleName("user");
         user = UserConvert.toEntity(req);
-        int id =0;
-       try {
-           id = userDAO.save(user);
-           UserEntity newUser = userDAO.findById(id);
-           if (id != 0) {
-               UserRoleEntity userRole = new UserRoleEntity();
-               userRole.setUsers(newUser);
-               userRole.setRoles(role);
-               userRoleDAO.save(userRole);
-           }
-       }catch (Exception e) {
-           e.printStackTrace();
-       }
+        int id = 0;
+        try {
+            id = userDAO.save(user);
+            UserEntity newUser = userDAO.findById(id);
+            if (id != 0) {
+                UserRoleEntity userRole = new UserRoleEntity();
+                userRole.setUsers(newUser);
+                userRole.setRoles(role);
+                userRoleDAO.save(userRole);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return userDAO.findById(id);
     }
 

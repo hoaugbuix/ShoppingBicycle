@@ -1,5 +1,6 @@
 package com.hoangbuix.bicycle.dao.impl;
 
+import com.hoangbuix.bicycle.config.DBConfig;
 import com.hoangbuix.bicycle.dao.BaseDAO;
 import com.hoangbuix.bicycle.model.mapper.RowMapper;
 import org.apache.log4j.Logger;
@@ -7,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.sql.DataSource;
 import java.math.BigDecimal;
 import java.sql.*;
 import java.util.ArrayList;
@@ -19,18 +19,18 @@ import java.util.List;
 public class BaseDAOImpl<E> implements BaseDAO<E> {
 
     @Autowired
-    private DataSource dataSource;
+    private DBConfig dataSource;
 
     final static Logger log = Logger.getLogger(BaseDAOImpl.class);
 
     public Connection getConnection() {
+        Connection connection = null;
         try {
-            return dataSource.getConnection();
-        } catch (SQLException e) {
-            log.error(e.getMessage());
+            connection = dataSource.dataSource().getConnection();
+        } catch (SQLException | ClassNotFoundException | IllegalAccessException | InstantiationException e) {
             e.printStackTrace();
-            return null;
         }
+        return connection;
     }
 
     @Override

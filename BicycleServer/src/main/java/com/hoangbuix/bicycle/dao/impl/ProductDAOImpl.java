@@ -19,18 +19,18 @@ public class ProductDAOImpl extends BaseDAOImpl<ProductEntity> implements Produc
     public int save(ProductEntity product) {
         return insert(QueryConstant.callQuery(PRODUCT, SqlConstant.CREATE, product.getProductName(), product.getProductCode(),
                 product.getDescription(), product.getSlug(), product.getBrandId(), product.getPrice(),
-                product.getProductImage(), product.getTotalSold(), product.getCategoyId()), product.getProductName(), product.getProductCode(),
+                product.getProductImage(), product.getTotalProduct(), product.getTotalSold(), product.getQuantityProduct(), product.getCategoryId()), product.getProductName(), product.getProductCode(),
                 product.getDescription(), product.getSlug(), product.getBrandId(), product.getPrice(),
-                product.getProductImage(), product.getTotalSold(), product.getCategoyId());
+                product.getProductImage(), product.getTotalProduct(),  product.getTotalSold(), product.getQuantityProduct(), product.getCategoryId());
     }
 
     @Override
     public void update(ProductEntity product) {
         update(QueryConstant.callQuery(PRODUCT, SqlConstant.UPDATE, product.getProductName(), product.getProductCode(),
                 product.getDescription(), product.getSlug(), product.getBrandId(), product.getPrice(),
-                product.getProductImage(), product.getTotalSold(), product.getCategoyId()), product.getProductName(), product.getProductCode(),
+                product.getProductImage(), product.getTotalSold(), product.getQuantityProduct(), product.getCategoryId()), product.getProductName(), product.getProductCode(),
                 product.getDescription(), product.getSlug(), product.getBrandId(), product.getPrice(),
-                product.getProductImage(), product.getTotalSold(), product.getCategoyId());
+                product.getProductImage(), product.getTotalSold(), product.getQuantityProduct(), product.getCategoryId());
     }
 
     @Override

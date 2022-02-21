@@ -1,4 +1,4 @@
-package com.hoangbuix.bicycle.config;
+//package com.hoangbuix.bicycle.config;
 //
 //import org.springframework.core.Ordered;
 //import org.springframework.core.annotation.Order;
@@ -11,7 +11,7 @@ package com.hoangbuix.bicycle.config;
 //
 //@Component
 //@Order(Ordered.HIGHEST_PRECEDENCE)
-////public class CorsFilter implements Filter {
+//public class CorsFilter implements Filter {
 //    @Override
 //    public void init(FilterConfig filterConfig) throws ServletException {
 //        Filter.super.init(filterConfig);
